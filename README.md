@@ -13,3 +13,10 @@
 * [Gulp](https://www.npmjs.com/package/gulp-download) 
 * [Sass](http://sass-lang.com/)
 * [jQuery](http://jquery.com/)
+
+
+### Autors
+
+- Anna
+- Aziz
+- Vitya
