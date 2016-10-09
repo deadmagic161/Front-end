@@ -14,7 +14,6 @@
 * [Sass](http://sass-lang.com/)
 * [jQuery](http://jquery.com/)
 
-
 ### Autors
 
 - Anna
