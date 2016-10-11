@@ -22,3 +22,43 @@ body {
 	color:#999999;
 	margin: 62px 0 23px;
 }
+/* Gallery*/
+.book_preview {
+	display:inline-block;
+}
+.book_review__big {
+	height:200px;
+	width:200px;
+	background:white;
+	width: 500px;
+	height: 500px;
+	margin:50px 70px 15px 0px;	
+}
+
+.book_review__big img {
+	padding:75px 88px 72px 92px;
+}
+
+.book_review__small1, .book_review__small2,.book_review__small3,.book_review__small4{
+	display: inline-block;
+	height:112x;
+	width:112px;
+	background:white;
+	margin-top:0;
+	margin-right: 13.5px;
+}
+book_review__small4{
+	margin-right:0;
+}
+.book_review__small1 img{
+	padding:10px 34px 22px 18px;
+}
+.book_review__small2 img{
+	padding:15px 13px 13px 10px;
+}
+.book_review__small3 img{
+	padding:22px 19px 12px 19px;
+}
+.book_review__small4 img {
+	padding: 19px 21px 16px 15px;
+}
