@@ -8,12 +8,17 @@ a {
     text-decoration: none;
 }
 body {
-    background-color: f0efef;
+    background-color: #f0efef;
     width: 1150px;
     
 }
 
 .header {
      
-    border-bottom: 3px solid 355baa;
+    border-bottom: 3px solid #355baa;
+}
+.header a {
+	display: inline-block;
+	color:#999999;
+	margin: 62px 0 23px;
 }
