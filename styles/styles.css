@@ -1,5 +1,5 @@
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     
 }
@@ -8,14 +8,18 @@ a {
     text-decoration: none;
 }
 body {
-    background-color: #f0efef;
+    background: #f0efef;
     width: 1150px;
     
 }
-
 .header {
-     
+    width: 100%;
     border-bottom: 3px solid #355baa;
     padding-top: 60px;
     padding-bottom: 30px;
+    margin: 0;
+}
+.header a {
+	display: inline-block;
+	color: #999;
 }
