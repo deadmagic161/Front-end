@@ -18,7 +18,7 @@ body {
 }
 .header a {
 	display: inline-block;
-	color: #999999;
+	color: #999;
 	margin: 62px 0 23px;
 }
 .book_preview {
@@ -35,7 +35,10 @@ body {
 	padding: 75px 88px 72px 92px;
 }
 
-.book_review__small1, .book_review__small2,.book_review__small3,.book_review__small4{
+.book_review__small1, 
+.book_review__small2, 
+.book_review__small3, 
+.book_review__small4 {
 	display: inline-block;
 	height: 112x;
 	width: 112px;
