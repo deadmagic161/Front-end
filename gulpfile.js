@@ -5,6 +5,8 @@ var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
 var clean = require('gulp-clean');
+var browserSync = require('browser-sync').create();
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('default', ['clean'], function() {
 	gulp.run('develop');
@@ -18,6 +20,9 @@ gulp.task('css', function () {
 	gulp.src('styles/*.css')
 		.pipe(concat('styles.css'))
 		.pipe(cssnano())
+		.pipe(autoprefixer({
+			browser: ['last 2 versions']
+		}))
 		.pipe(gulp.dest('build/'));
 });
 //Объединение js файлов в один
@@ -46,7 +51,8 @@ gulp.task('browser-sync', function() {
 // Установление слежки
 gulp.task('watch', function() {
 	gulp.watch('*.css', ['css']);
-	 gulp.watch('src/**/*.*').on('change', browserSync.reload); //Перезапуск browserSynс
+	gulp.watch('js/*.js', ['scripts']);
+
 });
 
 //Задача для удаление папки build.
