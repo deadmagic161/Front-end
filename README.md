@@ -11,11 +11,14 @@
 * HTML
 * CSS
 * [Gulp](https://www.npmjs.com/package/gulp-download) 
-* [Sass](http://sass-lang.com/)
+* [PostCSS](http://postcss.org/)
 * [jQuery](http://jquery.com/)
 
-### Autors
 
-- Anna
-- Aziz
-- Vitya
+### Authors
+
+* Anna
+* Aziz
+* Vitya
+
+
