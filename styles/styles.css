@@ -35,7 +35,7 @@ body {
 .book-preview {
 	display: inline-block;
 }
-.book-preview_big {
+.book-preview__img_big {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #fff;
@@ -44,7 +44,7 @@ body {
 	width: 499px;
 }
 
-.book-preview_small {
+.book-preview__img_small {
 	background-color: #fff;
 	background-repeat: no-repeat;
 	background-position: center;
