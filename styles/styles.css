@@ -10,7 +10,6 @@ a {
 
 body {
     background: #f0efef;
-    width: 1150px;
 }
 
 .wrapper {
@@ -33,43 +32,25 @@ body {
     color: #999;
 }
 
-.book_preview {
+.book-preview {
 	display: inline-block;
 }
-.book_review__big {
-	background: white;
-	width: 499px;
-	height: 500px;
+.book-preview__img_big {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #fff;
 	margin: 50px 70px 15px 0;
+	height: 500px;
+	width: 499px;
 }
 
-.book_review__big img {
-	padding: 75px 88px 72px 92px;
-}
-
-.book_review__small1, 
-.book_review__small2, 
-.book_review__small3, 
-.book_review__small4 {
+.book-preview__img_small {
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
 	display: inline-block;
+	margin-right: 13px;
 	height: 112px;
 	width: 112px;
-	background: #fff;
-	margin-right: 13px;
 }
 
-.book_review__small1 img {
-	padding: 10px 34px 22px 16px;
-}
-
-.book_review__small2 img {
-	padding: 15px 13px 13px 10px;
-}
-
-.book_review__small3 img {
-	padding: 22px 19px 12px 19px;
-}
-
-.book_review__small4 img {
-	padding: 19px 21px 16px 15px;
-}
