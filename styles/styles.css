@@ -1,4 +1,4 @@
-html, body {
+html, body, ul, h1 {
     margin: 0;
     padding: 0;
 }
@@ -15,10 +15,15 @@ body {
     width: 1150px;
     margin: 0 auto;
 }
+.header {
+    margin: 0;
+    margin-bottom: 50px;
+    
+}
 
 .menu {
     border-bottom: 3px solid #355baa;
-    padding: 60px 0 30px;
+    padding: 64px 0 23px;
 }
 
 .menu__item {
@@ -27,7 +32,6 @@ body {
 
 .menu__link {
 	display: inline-block;
-    margin: 62px 0 23px;
     color: #4e6fb3;
 }
 
@@ -37,15 +41,17 @@ body {
 
 .book-preview {
 	display: inline-block;
-    width: 10%;
-}
+    vertical-align: top;
+    margin-right: 70px;
+    }
+
 .book-preview__img_big {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #fff;
-	margin: 50px 70px 15px 0;
+	width: 500px;
+    margin-bottom: 15px;
 	height: 500px;
-	width: 499px;
 }
 
 .book-preview__img_small {
@@ -57,8 +63,12 @@ body {
 	height: 112px;
 	width: 112px;
 }
+.book-preview__img_small:last-child{
+    margin: 0;
+}
 
 .description {
-    width: 40%;
-    
+    display: inline-block;
+    vertical-align: top;
+    width: 565px;
 }
