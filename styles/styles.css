@@ -55,13 +55,13 @@ body {
 }
 
 .book-preview__img_small {
-background-color: #fff;
-	background-repeat: no-repeat;
-	background-position: center;
-	display: inline-block;
-	margin-right: 13px;
-	height: 112px;
-	width: 112px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin-right: 13px;
+    height: 112px;
+    width: 112px;
 }
 .book-preview__img_small:last-child{
     margin: 0;
