@@ -46,16 +46,16 @@ body {
     }
 
 .book-preview__img_big {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: #fff;
-	width: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    width: 500px;
     margin-bottom: 15px;
-	height: 500px;
+    height: 500px;
 }
 
 .book-preview__img_small {
-	background-color: #fff;
+background-color: #fff;
 	background-repeat: no-repeat;
 	background-position: center;
 	display: inline-block;
