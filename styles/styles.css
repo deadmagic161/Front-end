@@ -1,3 +1,14 @@
+@font-face {
+	font-family: Roboto Bold;
+	src: url(../assets/font/roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+	font-family: Roboto Regular;
+	src: url(../assets/font/roboto/Roboto-Regular.ttf);
+}
+
+
 html, body {
     margin: 0;
     padding: 0;
@@ -5,7 +16,6 @@ html, body {
 
 a {
     text-decoration: none;
-    color: #4e6fb3;
 }
 
 body {
@@ -17,29 +27,38 @@ body {
     margin: 0 auto;
 }
 
-.header {
-    width: 100%;
+.header{
+	margin-bottom: 50px;
+}
+.menu {
     border-bottom: 3px solid #355baa;
-    padding: 60px 0 30px;
+    padding: 0;
+    margin: 0;
 }
 
-.header a {
-	display: inline-block;
-    color: #999;
-    margin: 62px 0 23px;
+.menu__item {
+    display: inline-block;
 }
-.greycolour {
+
+.menu__link {
+	display: inline-block;
+    margin: 62px 0 23px;
+    color: #4e6fb3;
+}
+
+._grey {
     color: #999;
 }
 
 .book-preview {
 	display: inline-block;
+	margin: 0 70px 40px 0;
 }
 .book-preview__img_big {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #fff;
-	margin: 50px 70px 15px 0;
+	margin: 0 0 15px 0;
 	height: 500px;
 	width: 499px;
 }
@@ -54,4 +73,39 @@ body {
 	width: 112px;
 }
 
+.description {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+.character{
+    display: inline-block;
+
+}
+
+.character__list{
+    list-style: none;
+    padding: 0;
+}
+
+.character__item{
+    font: 14px  'Roboto Regular', Arial, sans-serif;
+    color: #959595;
+    line-height: 1.714;
+} 
+
+.character__text{
+	color: #232323;
+}
+._border{
+	display: inline;
+	border-bottom: 1px #355baa dotted;
+	color: #355baa;
+}
+
+.character__link{
+	color: #355baa;
+}
 
