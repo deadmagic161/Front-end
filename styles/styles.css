@@ -98,6 +98,7 @@ body {
 
 .character__text{
 	color: #232323;
+	margin-bottom: 60px;
 }
 ._border{
 	display: inline;
@@ -105,7 +106,67 @@ body {
 	color: #355baa;
 }
 
-.character__link{
+.character__link._{
 	color: #355baa;
 }
 
+.character__link._border:hover{
+	text-decoration: none;
+	border-bottom: 0;
+}
+/*Кнопка скачать*/
+
+.character-button{
+	display: inline-block;
+	position: relative;
+
+}
+.character-button__link{
+	display: inline-block;
+	border: 3px solid #d69200;
+	font: 14px 'Roboto Bold', Arial, sans-serif;
+	color: #fff;
+	padding: 15px 75px 13px 30px;
+	background-color: #ffae00;
+	margin-right: 45px;
+	position: relative;
+}
+
+.character-button__link:after{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 1px;
+	color: red;
+	height: 46px;
+    top: 0;
+    right: 50px;
+}
+.character-button__link:hover{
+	background-color: #d69200;
+	transition: background-color .3s linear;
+}
+	
+.character-button__arrow{
+	background: url(../assets/img/arrow.png) no-repeat;
+	position: absolute;
+    right: 11px;
+    bottom: 10px;
+    width: 20px;
+    height: 20px
+}
+/*Социальные иконки*/
+.character-icons{
+	display: inline-block;
+}
+
+.character-icons__text{
+	font: 14px 'Roboto Regular', Arial, sans-serif;
+	color: #959595;
+	margin-right: 10px;
+}
+
+.character-icons__list{
+	list-style: none;
+	display: inline-block;
+}
