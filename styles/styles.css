@@ -8,7 +8,6 @@
 	src: url(../assets/font/roboto/Roboto-Regular.ttf);
 }
 
-
 html, body {
     margin: 0;
     padding: 0;
@@ -54,6 +53,7 @@ body {
 	display: inline-block;
 	margin: 0 70px 40px 0;
 }
+
 .book-preview__img_big {
 	background-repeat: no-repeat;
 	background-position: center;
@@ -77,15 +77,14 @@ body {
     width: 40%;
     display: inline-block;
     vertical-align: top;
-    
 }
 
 .character{
     display: inline-block;
-
 }
 
 .character__list{
+	display: inline-block;
     list-style: none;
     padding: 0;
 }
@@ -100,6 +99,7 @@ body {
 	color: #232323;
 	margin-bottom: 60px;
 }
+
 ._border{
 	display: inline;
 	border-bottom: 1px #355baa dotted;
@@ -111,10 +111,10 @@ body {
 }
 
 .character__link._border:hover{
-	text-decoration: none;
 	border-bottom: 0;
+	transition: border-bottom .3s linear;
 }
-/*Кнопка скачать*/
+/*----------Кнопка скачать----------*/
 
 .character-button{
 	display: inline-block;
@@ -132,19 +132,24 @@ body {
 	position: relative;
 }
 
-.character-button__link:after{
-	content: "";
-	position: absolute;
+.character-button__line{
 	display: block;
+	position: absolute;
 	width: 1px;
-	color: red;
-	height: 46px;
-    top: 0;
+	background: #d69200;
+	height: 50px;
+    top: -3px;
     right: 50px;
 }
+
+.character-button__link:hover .character-button__line{
+	background: #ffae00;
+	transition: background .3s linear;
+}
+
 .character-button__link:hover{
-	background-color: #d69200;
-	transition: background-color .3s linear;
+	background: #d69200;
+	transition: background .3s linear;
 }
 	
 .character-button__arrow{
@@ -155,18 +160,76 @@ body {
     width: 20px;
     height: 20px
 }
-/*Социальные иконки*/
+/*----------Социальные иконки----------*/
+
 .character-icons{
 	display: inline-block;
+	margin-bottom: 60px;
 }
 
 .character-icons__text{
 	font: 14px 'Roboto Regular', Arial, sans-serif;
-	color: #959595;
+	color: #a1a1a1;
 	margin-right: 10px;
 }
 
 .character-icons__list{
 	list-style: none;
 	display: inline-block;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.sprite {
+    background-image: url(../assets/img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.sprite-icon_f {
+    width: 41px;
+    height: 41px;
+    background-position: -56px -5px;
+}
+
+.sprite-icon_f:hover {
+    width: 41px;
+    height: 41px;
+    background-position: -5px -5px;
+}
+.sprite-icon_inst {
+    width: 41px;
+    height: 41px;
+    background-position: -5px -56px;
+}
+
+.sprite-icon_inst:hover {
+    width: 41px;
+    height: 41px;
+    background-position: -107px -56px;
+}
+
+.sprite-icon_ok {
+    width: 41px;
+    height: 41px;
+    background-position: -56px -56px;
+}
+
+.sprite-icon_ok:hover {
+    width: 41px;
+    height: 41px;
+    background-position: -5px -107px;
+}
+
+.sprite-icon_vk {
+    width: 41px;
+    height: 41px;
+    background-position: -107px -5px;
+}
+
+.sprite-icon_vk:hover {
+    width: 41px;
+    height: 41px;
+    background-position: -56px -107px;
 }
