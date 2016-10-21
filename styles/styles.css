@@ -84,6 +84,7 @@ body {
     vertical-align: top;
 }
 
+<<<<<<< HEAD
 .character{
     display: inline-block;
 }
@@ -113,6 +114,11 @@ body {
 
 .character__link._{
 	color: #355baa;
+=======
+.example {
+	background: resolve('dog.jpg');
+	position:absolute 48px 0 10px 15px; 
+>>>>>>> change_image
 }
 
 .character__link._border:hover{
