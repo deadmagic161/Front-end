@@ -1,3 +1,4 @@
+
 @font-face {
 	font-family: Roboto Bold;
 	src: url(../assets/font/roboto/Roboto-Bold.ttf);
@@ -8,7 +9,7 @@
 	src: url(../assets/font/roboto/Roboto-Regular.ttf);
 }
 
-html, body {
+html, body, ul, h1 {
     margin: 0;
     padding: 0;
 }
@@ -63,6 +64,16 @@ body {
     height: 500px
 }
 
+.book-preview__img_small {
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+	margin-right: 13px;
+    height: 112px;
+    width: 112px;
+}
+
 .book-preview__img_small:last-child {
 	margin: 0;
 }
@@ -108,7 +119,6 @@ body {
 	border-bottom: 0;
 	transition: border-bottom .3s linear;
 }
-/*----------Кнопка скачать----------*/
 
 .character-button{
 	display: inline-block;
@@ -232,3 +242,4 @@ body {
     background-size: 40px 40px;
     transition: background .3s linear; 
 }
+
