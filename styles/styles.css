@@ -27,12 +27,12 @@ body {
 }
 
 .header{
-	margin-bottom: 50px;
+	margin: 0 0 50px 0;
 }
+
 .menu {
     border-bottom: 3px solid #355baa;
-    padding: 0;
-    margin: 0;
+    padding: 64px 0 23px
 }
 
 .menu__item {
@@ -41,7 +41,6 @@ body {
 
 .menu__link {
 	display: inline-block;
-    margin: 62px 0 23px;
     color: #4e6fb3;
 }
 
@@ -51,6 +50,7 @@ body {
 
 .book-preview {
 	display: inline-block;
+	vertical-align: top;
 	margin: 0 70px 40px 0;
 }
 
@@ -58,23 +58,17 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #fff;
-	margin: 0 0 15px 0;
-	height: 500px;
-	width: 499px;
+	width: 500px;
+    margin-bottom: 0 0 15px 0;
+    height: 500px
 }
 
-.book-preview__img_small {
-	background-color: #fff;
-	background-repeat: no-repeat;
-	background-position: center;
-	display: inline-block;
-	margin-right: 13px;
-	height: 112px;
-	width: 112px;
+.book-preview__img_small:last-child {
+	margin: 0;
 }
 
 .description {
-    width: 40%;
+    width: 565px;
     display: inline-block;
     vertical-align: top;
 }
@@ -237,56 +231,4 @@ body {
     background: url(../assets/img/ok_active.svg) no-repeat;
     background-size: 40px 40px;
     transition: background .3s linear; 
-}
-/*.sprite {
-    background: url(../assets/img/spritesheet.png) no-repeat;
-    display: inline-block;
-    margin: 0 5px 0 0;
-}
-
-.sprite-icon_f {
-    width: 41px;
-    height: 41px;
-    background-position: -56px -5px;
-}
-
-.sprite-icon_f:hover {
-    width: 41px;
-    height: 41px;
-    background-position: -5px -5px;
-}
-.sprite-icon_inst {
-    width: 41px;
-    height: 41px;
-    background-position: -5px -56px;
-}
-
-.sprite-icon_inst:hover {
-    width: 41px;
-    height: 41px;
-    background-position: -107px -56px;
-}
-
-.sprite-icon_ok {
-    width: 41px;
-    height: 41px;
-    background-position: -56px -56px;
-}
-
-.sprite-icon_ok:hover {
-    width: 41px;
-    height: 41px;
-    background-position: -5px -107px;
-}
-
-.sprite-icon_vk {
-    width: 41px;
-    height: 41px;
-    background-position: -107px -5px;
-}
-
-.sprite-icon_vk:hover {
-    width: 41px;
-    height: 41px;
-    background-position: -56px -107px;
 }
