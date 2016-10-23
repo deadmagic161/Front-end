@@ -119,6 +119,7 @@ body {
 .character-button{
 	display: inline-block;
 	position: relative;
+	margin: 0 45px 0 0;
 
 }
 .character-button__link{
@@ -127,8 +128,8 @@ body {
 	font: 14px 'Roboto Bold', Arial, sans-serif;
 	color: #fff;
 	padding: 15px 75px 13px 30px;
-	background-color: #ffae00;
-	margin-right: 45px;
+	background: #ffae00;
+	margin: 0 45 0 0px;
 	position: relative;
 }
 
@@ -160,17 +161,16 @@ body {
     width: 20px;
     height: 20px
 }
-/*----------Социальные иконки----------*/
 
 .character-icons{
 	display: inline-block;
-	margin-bottom: 60px;
+	margin: 0 0 60px 0;
 }
 
 .character-icons__text{
 	font: 14px 'Roboto Regular', Arial, sans-serif;
 	color: #a1a1a1;
-	margin-right: 10px;
+	margin: 0 10px 0 0;
 }
 
 .character-icons__list{
@@ -178,13 +178,70 @@ body {
 	display: inline-block;
 	padding: 0;
 	vertical-align: middle;
+	margin: 0;
 }
 
-.sprite {
-    background-image: url(../assets/img/spritesheet.png);
-    background-repeat: no-repeat;
+.character-icons__item{
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+
+._fb{
+	height: 40px;
+    width: 40px;
+    background: url(../assets/img/fb.svg) no-repeat;
+    background-size: 40px 40px;
+}
+
+._fb:hover{
+	background: url(../assets/img/facebook.svg) no-repeat;
+	background-size: 40px 40px;
+	transition: background .3s linear; 
+
+}
+
+._vk{
+	height: 40px;
+    width: 40px;
+    background: url(../assets/img/vk.svg) no-repeat;
+    background-size: 40px 40px;
+}
+
+._vk:hover{
+    background: url(../assets/img/vkontakte.svg) no-repeat;
+    background-size: 40px 40px;
+    transition: background .3s linear; 
+}
+
+._in{
+	height: 40px;
+    width: 40px;
+    background: url(../assets/img/in.svg) no-repeat;
+    background-size: 40px 40px;
+}
+
+._in:hover{
+    background: url(../assets/img/instagram.svg) no-repeat;
+    background-size: 40px 40px;
+    transition: background .3s linear; 
+}
+
+._ok{
+	height: 40px;
+    width: 40px;
+    background: url(../assets/img/ok.svg) no-repeat;
+    background-size: 40px 40px;
+}
+
+._ok:hover{
+    background: url(../assets/img/ok_active.svg) no-repeat;
+    background-size: 40px 40px;
+    transition: background .3s linear; 
+}
+/*.sprite {
+    background: url(../assets/img/spritesheet.png) no-repeat;
     display: inline-block;
-    margin-right: 5px;
+    margin: 0 5px 0 0;
 }
 
 .sprite-icon_f {
