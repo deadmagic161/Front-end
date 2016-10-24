@@ -83,6 +83,7 @@ body {
     display: inline-block;
     vertical-align: top;
 }
+<<<<<<< HEAD
 
 .character{
     display: inline-block;
@@ -243,3 +244,5 @@ body {
     transition: background .3s linear; 
 }
 
+=======
+>>>>>>> fix2
