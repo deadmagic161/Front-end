@@ -69,7 +69,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	display: inline-block;
-	margin-right: 13px;
+	margin:13px 13px 0 0;
     height: 112px;
     width: 112px;
 }
@@ -200,8 +200,7 @@ body {
 ._fb:hover{
 	background: url(../assets/img/facebook.svg) no-repeat;
 	background-size: 40px 40px;
-	transition: background .3s linear; 
-
+	transition: background .3s linear;
 }
 
 ._vk{

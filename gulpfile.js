@@ -4,6 +4,10 @@ var cssnano = require('gulp-cssnano');
 var clean = require('gulp-clean');
 var browserSync = require('browser-sync').create();
 var autoprefixer = require('gulp-autoprefixer');
+var rename = require ('gulp-rename');
+var postcss = require('gulp-postcss');
+var assets = require ('postcss-assets');
+var short = require('postcss-short');
 
 gulp.task('default', ['clean'], function() {
 	gulp.run('develop');
@@ -11,13 +15,22 @@ gulp.task('default', ['clean'], function() {
 gulp.task('develop', ['css', 'watch', 'browser-sync', 'assets']); 
 
 gulp.task('css', function () {
+	var processors = [
+		short,
+		assets ({
+			loadPaths: ['assets/img/'],
+			relativTo: '/styles/'
+		}),
+  ];
 	return gulp.src('styles/*.css')
 		.pipe(concat('styles.css'))
 		.pipe(cssnano())
+		.pipe(postcss(processors))
+		.pipe(rename('styleOut.css'))
 		.pipe(autoprefixer({
 			browser: ['last 2 versions']
 		}))
-		.pipe(gulp.dest('build/'));
+		.pipe(gulp.dest('build/styles/'));
 });
 
 gulp.task('browser-sync', function() {
