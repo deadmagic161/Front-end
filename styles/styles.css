@@ -123,7 +123,7 @@ body {
 .character-button{
 	display: inline-block;
 	position: relative;
-	margin: 0 45px 0 0;
+	margin: 0 45px 60px 0;
 
 }
 .character-button__link{
@@ -187,7 +187,7 @@ body {
 
 .character-icons__item{
 	display: inline-block;
-	margin: 0 5px 0 0;
+	margin: 0 2px 0 0;
 }
 
 ._fb{
@@ -242,3 +242,34 @@ body {
     transition: background .3s linear; 
 }
 
+._head{
+	font: 20px 'Roboto Bold', Arial, sans-serif;
+	margin: 0 0 36px;
+}
+
+.you-like__container-item{
+	display:flex;
+	flex-direction: row;
+}
+
+._book {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #fff;
+	margin: 0 18px 98px 0;
+	size: 237px;
+}
+
+._text{
+	font: 16px 'Roboto Bold', Arial, sans-serif;
+	padding-top: 248px;
+	margin-bottom: -10px;
+}
+
+._autor {
+	font: 16px 'Roboto Regular', Arial, sans-serif;
+}
+
+._color{
+	color: #959595;
+}
