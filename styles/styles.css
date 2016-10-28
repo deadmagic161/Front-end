@@ -78,11 +78,15 @@ body {
 .book-preview__img_small:last-child {
 	margin: 0;
 }
-
+.description p {
+    margin-bottom: 40px;
+}
 .description {
+    font: 14px  'Roboto Regular', Arial, sans-serif;
     width: 565px;
     display: inline-block;
     vertical-align: top;
+    
 }
 .description__list {
 	list-style-type: none;
