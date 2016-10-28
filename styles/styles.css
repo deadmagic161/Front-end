@@ -23,6 +23,7 @@ body {
 }
 
 .wrapper {
+	font: 14px 'Roboto Regular', Arial, sans-serif;
     width: 1150px;
     margin: 0 auto;
 }
@@ -83,7 +84,9 @@ body {
     display: inline-block;
     vertical-align: top;
 }
-
+.description__list {
+	list-style-type: none;
+}
 .character{
     display: inline-block;
 }
@@ -158,7 +161,7 @@ body {
 }
 	
 .character-button__arrow{
-	background: url(../assets/img/arrow.png) no-repeat;
+	background: inline(../assets/img/arrow.png) no-repeat;
 	position: absolute;
     right: 11px;
     bottom: 10px;
@@ -193,12 +196,12 @@ body {
 ._fb{
 	height: 40px;
     width: 40px;
-    background: url(../assets/img/fb.svg) no-repeat;
+    background: inline(../assets/img/fb.svg) no-repeat;
     background-size: 40px 40px;
 }
 
 ._fb:hover{
-	background: url(../assets/img/facebook.svg) no-repeat;
+	background: inline(../assets/img/facebook.svg) no-repeat;
 	background-size: 40px 40px;
 	transition: background .3s linear;
 }
@@ -206,12 +209,12 @@ body {
 ._vk{
 	height: 40px;
     width: 40px;
-    background: url(../assets/img/vk.svg) no-repeat;
+    background: inline(../assets/img/vk.svg) no-repeat;
     background-size: 40px 40px;
 }
 
 ._vk:hover{
-    background: url(../assets/img/vkontakte.svg) no-repeat;
+    background: inline(../assets/img/vkontakte.svg) no-repeat;
     background-size: 40px 40px;
     transition: background .3s linear; 
 }
@@ -219,12 +222,12 @@ body {
 ._in{
 	height: 40px;
     width: 40px;
-    background: url(../assets/img/in.svg) no-repeat;
+    background: inline(../assets/img/in.svg) no-repeat;
     background-size: 40px 40px;
 }
 
 ._in:hover{
-    background: url(../assets/img/instagram.svg) no-repeat;
+    background: inline(../assets/img/instagram.svg) no-repeat;
     background-size: 40px 40px;
     transition: background .3s linear; 
 }
@@ -232,12 +235,12 @@ body {
 ._ok{
 	height: 40px;
     width: 40px;
-    background: url(../assets/img/ok.svg) no-repeat;
+    background: inline(../assets/img/ok.svg) no-repeat;
     background-size: 40px 40px;
 }
 
 ._ok:hover{
-    background: url(../assets/img/ok_active.svg) no-repeat;
+    background: inline(../assets/img/ok_active.svg) no-repeat;
     background-size: 40px 40px;
     transition: background .3s linear; 
 }
