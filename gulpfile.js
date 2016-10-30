@@ -7,13 +7,13 @@ var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('default', ['dev']);
 
-gulp.task('dev', ['build', 'browser-sync', 'watch']);
+gulp.task('dev', ['build-dev', 'browser-sync', 'watch']);
 gulp.task('prod', ['clean'], function() {
-	gulp.run('build');
+	gulp.run('build-dev');
 });
 
-gulp.task('build-dev', ['html', 'css-dev', 'scripts', 'assets']);
-gulp.task('build-prod', ['html', 'css-prod', 'scripts', 'assets']);
+gulp.task('build-dev', ['html', 'css-dev', 'assets',]);
+gulp.task('build-prod', ['html', 'css-prod', 'assets']);
 	
 gulp.task('css-dev', function () {
 	return gulp.src('./src/styles/*.css')
@@ -39,11 +39,6 @@ gulp.task('html', function () {
 		.pipe(gulp.dest('./build/'));
 });
 
-gulp.task('scripts', function () {
-	return gulp.src('./src/scripts/**/*.js')
-		.pipe(gulp.dest('./build/scripts/'));
-});
-
 gulp.task('browser-sync', function() {
 	return browserSync.init({
 		server: {
@@ -53,8 +48,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('watch', function() {
-	gulp.watch('./src/styles/*.css', ['css']);
-	gulp.watch('./src/scripts/*.js', ['scripts']);
+	gulp.watch('./src/styles/*.css', ['css-dev']);
 	gulp.watch('./src/index.html', ['html']);
 	gulp.watch('./src/**/*.*', browserSync.reload);
 });
@@ -65,6 +59,6 @@ gulp.task('clean', function() {
 });
 
 gulp.task('assets', function() {
-	return gulp.src('./src/assets/**/*.*')
+	return gulp.src('src/assets/**/*.*')
 		.pipe(gulp.dest('./build/assets/'));
 });
