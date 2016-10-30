@@ -61,7 +61,13 @@ body {
 	background-color: #fff;
 	width: 500px;
     margin-bottom: 0 0 15px 0;
-    height: 500px
+    height: 500px;
+	transition: .5s;
+}
+
+.book-preview__img_big:hover {
+	background-color: #959595;
+	
 }
 
 .book-preview__img_small {
@@ -72,6 +78,11 @@ body {
 	margin:13px 13px 0 0;
     height: 112px;
     width: 112px;
+	transition: .5s;
+}
+
+.book-preview__img_small:hover {
+	background-color: #959595;
 }
 
 .book-preview__img_small:last-child {
@@ -242,12 +253,12 @@ body {
     transition: background .3s linear; 
 }
 
-._head{
+._head {
 	font: 20px 'Roboto Bold', Arial, sans-serif;
 	margin: 0 0 36px;
 }
 
-.recommendation__container-item{
+.recommendation__container-item {
 	display:flex;
 	flex-direction: row;
 }
@@ -262,7 +273,7 @@ body {
 
 ._text {
 	font: 16px 'Roboto Bold', Arial, sans-serif;
-	padding-top: 248px;
+	margin-top: 248px;
 	margin-bottom: -10px;
 }
 
@@ -270,6 +281,11 @@ body {
 	font: 16px 'Roboto Regular', Arial, sans-serif;
 }
 
-._color{
+.recommendation__link-autor:hover,
+._text:hover {
+	text-decoration: underline;
+}
+
+._color {
 	color: #959595;
 }
