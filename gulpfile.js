@@ -9,28 +9,55 @@ var postcss = require('gulp-postcss');
 var assets = require ('postcss-assets');
 var short = require('postcss-short');
 
-gulp.task('default', ['clean'], function() {
-	gulp.run('develop');
-}); 
-gulp.task('develop', ['css', 'watch', 'browser-sync', 'assets']); 
+gulp.task('default', ['dev']);
+gulp.task('dev', ['build-dev', 'browser-sync', 'watch']);
+gulp.task('prod', ['clean'], function() {
+	gulp.run('build-dev');
+});
 
-gulp.task('css', function () {
+gulp.task('build-dev', ['html', 'css-dev', 'assets']);
+gulp.task('build-prod', ['html', 'css-prod', 'assets']);
+	
+gulp.task('css-dev', function () {
 	var processors = [
 		short,
 		assets ({
-			loadPaths: ['assets/img/'],
-			relativTo: '/styles/'
+			loadPaths: ['src/assets/img/'],
+			relativTo: 'src/styles/'
 		}),
   ];
-	return gulp.src('styles/*.css')
+	return gulp.src('./src/styles/*.css')
 		.pipe(concat('styles.css'))
-		.pipe(cssnano())
 		.pipe(postcss(processors))
 		.pipe(rename('styleOut.css'))
 		.pipe(autoprefixer({
 			browser: ['last 2 versions']
 		}))
-		.pipe(gulp.dest('build/styles/'));
+		.pipe(gulp.dest('./build/styles/'));
+});
+
+gulp.task('css-prod', function () {
+		var processors = [
+		short,
+		assets ({
+			loadPaths: ['src/assets/img/'],
+			relativTo: 'src/styles/'
+		}),
+  ];
+	return gulp.src('./src/styles/*.css')
+	
+	.pipe(concat('styles.css'))
+	.pipe(cssnano())
+	.pipe(rename('styleOut.css'))
+	.pipe(autoprefixer({
+			browser: ['last 2 versions']
+		}))
+	.pipe(gulp.dest('./build/styles/'));
+});
+
+gulp.task('html', function () {
+	return gulp.src('./src/index.html')
+		.pipe(gulp.dest('./build/'));
 });
 
 gulp.task('browser-sync', function() {
@@ -42,16 +69,17 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('watch', function() {
-	gulp.watch('*.css', ['css']);
-	gulp.watch('js/*.js', ['scripts']);
+	gulp.watch('./src/styles/*.css', ['css-dev']);
+	gulp.watch('./src/index.html', ['html']);
+	gulp.watch('./src/**/*.*', browserSync.reload);
 });
 
 gulp.task('clean', function() {
 	return gulp.src('build/')
 		.pipe(clean());
-})
+});
 
 gulp.task('assets', function() {
-	return gulp.src('**/*.*')
-		.pipe(gulp.dest('build/'));
+	return gulp.src('src/assets/**/*.*')
+		.pipe(gulp.dest('./build/assets/'));
 });

@@ -11,7 +11,7 @@
 * HTML
 * CSS
 * [Gulp](https://www.npmjs.com/package/gulp-download) 
-* [Sass](http://sass-lang.com/)
+* [PostCss](http://postcss.org/)
 * [jQuery](http://jquery.com/)
 
 ### Autors
@@ -20,41 +20,13 @@
 - Aziz
 - Vitya
 
-# Gulp install
---- 
-1. First of all install gulp globally:
-```sh
-$ npm install -g gulp
-```
-2.  Initialize your project directory:
-```sh
-$ npm init
-```
-3. Install gulp in your project devDependencies:
-```sh
-$ npm install --save-dev gulp
-```
-4. Create a gulpfile.js 
-```sh
-var gulp = require('gulp');
-
-gulp.task('default', function() {
-  // your code
-});
-```
-5. Run gulp:
-```sh
 $ gulp
 ```
 # Install plugins for project
 ---
 ## Install with npm
 ```sh
-$ npm install --save-dev gulp-concat
-$ npm install --save-dev gulp-cssnano
-$ npm install --save-dev gulp-autoprefixer
-$ npm install --save-dev gulp-clean
-$ npm install --save-dev gulp-browser-sync
+$ npm i // install all plugins for work, which is situated in package json
 ```
 ```sh
 var	concat = require('gulp-concat'); // Declaration of variables
@@ -92,5 +64,31 @@ gulp.task('assets', function() { //Move local files in folder 'build/'
 });
 
 ```
+
 ### You are ready for work !
 # ![Веселые миньоны](https://github.com/anyaVyacheslavovna/Images-/raw/master/minons1.gif) 
+
+# Gulp install
+--- 
+1. First of all install gulp globally:
+```sh
+$ npm install -g gulp
+```
+2.  Initialize your project directory:
+```sh
+$ npm init
+```
+3. Install gulp in your project devDependencies:
+```sh
+$ npm install --save-dev gulp
+```
+4. Create a gulpfile.js 
+```sh
+var gulp = require('gulp');
+
+gulp.task('default', function() {
+  // your code
+});
+```
+5. Run gulp:
+```sh
