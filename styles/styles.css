@@ -253,7 +253,7 @@ body {
     transition: background .3s linear; 
 }
 
-._head {
+ .recommendation ._head {
 	font: 20px 'Roboto Bold', Arial, sans-serif;
 	margin: 0 0 36px;
 }
@@ -263,29 +263,34 @@ body {
 	flex-direction: row;
 }
 
-._book {
+ .recommendation ._book {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #fff;
 	margin: 0 18px 98px 0;
 	size: 237px;
+	transition: .5s;
 }
 
-._text {
+.recommendation ._book:hover {
+	background-color: #959595;
+}
+
+.recommendation ._text {
 	font: 16px 'Roboto Bold', Arial, sans-serif;
 	margin-top: 248px;
 	margin-bottom: -10px;
 }
 
-._autor {
+.recommendation ._autor {
 	font: 16px 'Roboto Regular', Arial, sans-serif;
 }
 
 .recommendation__link-autor:hover,
-._text:hover {
+.recommendation ._text:hover {
 	text-decoration: underline;
 }
 
-._color {
+.recommendation ._color {
 	color: #959595;
 }
