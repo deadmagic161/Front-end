@@ -1,13 +1,4 @@
 
-@font-face {
-	font-family: Roboto Bold;
-	src: url(../assets/font/roboto/Roboto-Bold.ttf);
-}
-
-@font-face {
-	font-family: Roboto Regular;
-	src: url(../assets/font/roboto/Roboto-Regular.ttf);
-}
 
 html, body, ul, h1 {
     margin: 0;
@@ -130,7 +121,7 @@ body {
 .character-button{
 	display: inline-block;
 	position: relative;
-	margin: 0 45px 0 0;
+	margin: 0 45px 60px 0;
 
 }
 .character-button__link{
@@ -165,7 +156,7 @@ body {
 }
 	
 .character-button__arrow {
-	background: inline(../assets/img/arrow.png) no-repeat;
+	background: inline('arrow.png') no-repeat;
 	position: absolute;
     right: 11px;
     bottom: 10px;
@@ -194,18 +185,23 @@ body {
 
 .character-icons__item {
 	display: inline-block;
-	margin: 0 5px 0 0;
+	margin: 0 2px 0 0;
 }
 
 .character-icons__link ._fb {
 	height: 40px;
     width: 40px;
-    background: inline(../assets/img/fb.svg) no-repeat;
+    background: inline('fb.svg') no-repeat;
     background-size: 40px;
 }
 
 .character-icons__link ._fb:hover {
-	background: inline(../assets/img/facebook.svg) no-repeat;
+	background: inline('fb.svg') no-repeat;
+    background-size: 40px 40px;
+}
+
+._fb:hover {
+	background: inline('facebook.svg') no-repeat;
 	background-size: 40px 40px;
 	transition: background .3s linear;
 }
@@ -213,12 +209,13 @@ body {
 .character-icons__link ._vk {
 	height: 40px;
     width: 40px;
-    background: inline(../assets/img/vk.svg) no-repeat;
+    background: inline('vk.svg') no-repeat;
     background-size: 40px 40px;
 }
 
+
 .character-icons__link ._vk:hover {
-    background: inline(../assets/img/vkontakte.svg) no-repeat;
+    background: inline('vkontakte.svg') no-repeat;
     background-size: 40px 40px;
     transition: background .3s linear; 
 }
@@ -226,12 +223,13 @@ body {
 .character-icons__link ._in {
 	height: 40px;
     width: 40px;
-    background: inline(../assets/img/in.svg) no-repeat;
+    background: inline('in.svg') no-repeat;
     background-size: 40px 40px;
 }
 
+
 .character-icons__link ._in:hover {
-    background: inline(../assets/img/instagram.svg) no-repeat;
+    background: inline('instagram.svg') no-repeat;
     background-size: 40px 40px;
     transition: background .3s linear; 
 }
@@ -239,13 +237,45 @@ body {
 .character-icons__link ._ok {
 	height: 40px;
     width: 40px;
-    background: inline(../assets/img/ok.svg) no-repeat;
+    background: inline('ok.svg') no-repeat;
     background-size: 40px 40px;
 }
 
+
 .character-icons__link ._ok:hover {
-    background: inline(../assets/img/ok_active.svg) no-repeat;
+    background: inline('ok_active.svg') no-repeat;
     background-size: 40px 40px;
     transition: background .3s linear; 
 }
 
+._head{
+	font: 20px 'Roboto Bold', Arial, sans-serif;
+	margin: 0 0 36px;
+}
+
+.recommendation__container-item{
+	display:flex;
+	flex-direction: row;
+}
+
+._book {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #fff;
+	margin: 0 18px 98px 0;
+	size: 237px;
+}
+
+._text {
+	font: 16px 'Roboto Bold', Arial, sans-serif;
+	padding-top: 248px;
+	margin-bottom: -10px;
+}
+
+._autor {
+	font: 16px 'Roboto Regular', Arial, sans-serif;
+}
+
+._color{
+	color: #959595;
+}
