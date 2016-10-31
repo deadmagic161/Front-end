@@ -69,8 +69,11 @@ body {
 .book-preview__img_small:last-child {
 	margin: 0;
 }
-
+._margin-40 {
+    margin: 0 0 40px;
+}
 .description {
+    font: 14px  'Roboto Regular', Arial, sans-serif;
     width: 565px;
     display: inline-block;
     vertical-align: top;
@@ -78,6 +81,7 @@ body {
 .description__list {
 	list-style-type: none;
 }
+
 .character{
     display: inline-block;
 }
@@ -146,12 +150,12 @@ body {
 	transition: background .3s linear;
 }
 
-.character-button__link:hover{
+.character-button__link:hover {
 	background: #d69200;
 	transition: background .3s linear;
 }
 	
-.character-button__arrow{
+.character-button__arrow {
 	background: inline('arrow.png') no-repeat;
 	position: absolute;
     right: 11px;
@@ -160,18 +164,18 @@ body {
     height: 20px
 }
 
-.character-icons{
+.character-icons {
 	display: inline-block;
 	margin: 0 0 60px 0;
 }
 
-.character-icons__text{
+.character-icons__text {
 	font: 14px 'Roboto Regular', Arial, sans-serif;
 	color: #a1a1a1;
 	margin: 0 10px 0 0;
 }
 
-.character-icons__list{
+.character-icons__list {
 	list-style: none;
 	display: inline-block;
 	padding: 0;
@@ -179,58 +183,66 @@ body {
 	margin: 0;
 }
 
-.character-icons__item{
+.character-icons__item {
 	display: inline-block;
 	margin: 0 2px 0 0;
 }
 
-._fb{
+.character-icons__link ._fb {
 	height: 40px;
     width: 40px;
+    background: inline('fb.svg') no-repeat;
+    background-size: 40px;
+}
+
+.character-icons__link ._fb:hover {
 	background: inline('fb.svg') no-repeat;
     background-size: 40px 40px;
 }
 
-._fb:hover{
+._fb:hover {
 	background: inline('facebook.svg') no-repeat;
 	background-size: 40px 40px;
 	transition: background .3s linear;
 }
 
-._vk{
+.character-icons__link ._vk {
 	height: 40px;
     width: 40px;
     background: inline('vk.svg') no-repeat;
     background-size: 40px 40px;
 }
 
-._vk:hover{
+
+.character-icons__link ._vk:hover {
     background: inline('vkontakte.svg') no-repeat;
     background-size: 40px 40px;
     transition: background .3s linear; 
 }
 
-._in{
+.character-icons__link ._in {
 	height: 40px;
     width: 40px;
     background: inline('in.svg') no-repeat;
     background-size: 40px 40px;
 }
 
-._in:hover{
+
+.character-icons__link ._in:hover {
     background: inline('instagram.svg') no-repeat;
     background-size: 40px 40px;
     transition: background .3s linear; 
 }
 
-._ok{
+.character-icons__link ._ok {
 	height: 40px;
     width: 40px;
     background: inline('ok.svg') no-repeat;
     background-size: 40px 40px;
 }
 
-._ok:hover{
+
+.character-icons__link ._ok:hover {
     background: inline('ok_active.svg') no-repeat;
     background-size: 40px 40px;
     transition: background .3s linear; 
