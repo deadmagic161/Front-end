@@ -21,10 +21,17 @@
   },
   "homepage": "https://github.com/deadmagic161/Front-end#readme",
   "devDependencies": {
-    "browser-sync": "^2.17.3",
+    "autoprefixer": "^6.5.1",
+    "browser-sync": "^2.17.5",
+    "cssnano": "^3.7.7",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-clean": "^0.3.2",
-    "gulp-concat-css": "^2.3.0",
+    "gulp-concat": "^2.6.0",
     "gulp-cssnano": "^2.1.2",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "postcss-assets": "^4.1.0",
+    "postcss-short": "^2.0.1"
   }
 }

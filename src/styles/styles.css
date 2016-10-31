@@ -1,3 +1,5 @@
+
+
 html, body, ul, h1 {
     margin: 0;
     padding: 0;
@@ -15,15 +17,14 @@ body {
     width: 1150px;
     margin: 0 auto;
 }
-.header {
-    margin: 0;
-    margin-bottom: 50px;
-    
+
+.header{
+	margin: 0 0 50px 0;
 }
 
 .menu {
     border-bottom: 3px solid #355baa;
-    padding: 64px 0 23px;
+    padding: 64px 0 23px
 }
 
 .menu__item {
@@ -41,34 +42,225 @@ body {
 
 .book-preview {
 	display: inline-block;
-    vertical-align: top;
-    margin-right: 70px;
-    }
+	vertical-align: top;
+	margin: 0 70px 40px 0;
+}
 
 .book-preview__img_big {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #fff;
-    width: 500px;
-    margin-bottom: 15px;
-    height: 500px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #fff;
+	width: 500px;
+    margin-bottom: 0 0 15px 0;
+    height: 500px
 }
 
 .book-preview__img_small {
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-    margin-right: 13px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+	margin:13px 13px 0 0;
     height: 112px;
     width: 112px;
 }
-.book-preview__img_small:last-child{
-    margin: 0;
+
+.book-preview__img_small:last-child {
+	margin: 0;
 }
 
 .description {
+    width: 565px;
     display: inline-block;
     vertical-align: top;
-    width: 565px;
+}
+
+.character{
+    display: inline-block;
+}
+
+.character__list{
+	display: inline-block;
+    list-style: none;
+    padding: 0;
+}
+
+.character__item{
+    font: 14px  'Roboto Regular', Arial, sans-serif;
+    color: #959595;
+    line-height: 1.714;
+} 
+
+.character__text{
+	color: #232323;
+	margin-bottom: 60px;
+}
+
+._border{
+	display: inline;
+	border-bottom: 1px #355baa dotted;
+	color: #355baa;
+}
+
+.character__link._{
+	color: #355baa;
+}
+
+.character__link._border:hover{
+	border-bottom: 0;
+	transition: border-bottom .3s linear;
+}
+
+.character-button{
+	display: inline-block;
+	position: relative;
+	margin: 0 45px 60px 0;
+
+}
+.character-button__link{
+	display: inline-block;
+	border: 3px solid #d69200;
+	font: 14px 'Roboto Bold', Arial, sans-serif;
+	color: #fff;
+	padding: 15px 75px 13px 30px;
+	background: #ffae00;
+	margin: 0 45 0 0px;
+	position: relative;
+}
+
+.character-button__line{
+	display: block;
+	position: absolute;
+	width: 1px;
+	background: #d69200;
+	height: 50px;
+    top: -3px;
+    right: 50px;
+}
+
+.character-button__link:hover .character-button__line{
+	background: #ffae00;
+	transition: background .3s linear;
+}
+
+.character-button__link:hover{
+	background: #d69200;
+	transition: background .3s linear;
+}
+	
+.character-button__arrow{
+	background: inline('arrow.png') no-repeat;
+	position: absolute;
+    right: 11px;
+    bottom: 10px;
+    width: 20px;
+    height: 20px
+}
+
+.character-icons{
+	display: inline-block;
+	margin: 0 0 60px 0;
+}
+
+.character-icons__text{
+	font: 14px 'Roboto Regular', Arial, sans-serif;
+	color: #a1a1a1;
+	margin: 0 10px 0 0;
+}
+
+.character-icons__list{
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.character-icons__item{
+	display: inline-block;
+	margin: 0 2px 0 0;
+}
+
+._fb{
+	height: 40px;
+    width: 40px;
+    background: inline('fb.svg') no-repeat;
+    background-size: 40px 40px;
+}
+
+._fb:hover{
+	background: inline('facebook.svg') no-repeat;
+	background-size: 40px 40px;
+	transition: background .3s linear;
+}
+
+._vk{
+	height: 40px;
+    width: 40px;
+    background: inline('vk.svg') no-repeat;
+    background-size: 40px 40px;
+}
+
+._vk:hover{
+    background: inline('vkontakte.svg') no-repeat;
+    background-size: 40px 40px;
+    transition: background .3s linear; 
+}
+
+._in{
+	height: 40px;
+    width: 40px;
+    background: inline('in.svg') no-repeat;
+    background-size: 40px 40px;
+}
+
+._in:hover{
+    background: inline('instagram.svg') no-repeat;
+    background-size: 40px 40px;
+    transition: background .3s linear; 
+}
+
+._ok{
+	height: 40px;
+    width: 40px;
+    background: inline('ok.svg') no-repeat;
+    background-size: 40px 40px;
+}
+
+._ok:hover{
+    background: inline('ok_active.svg') no-repeat;
+    background-size: 40px 40px;
+    transition: background .3s linear; 
+}
+
+._head{
+	font: 20px 'Roboto Bold', Arial, sans-serif;
+	margin: 0 0 36px;
+}
+
+.recommendation__container-item{
+	display:flex;
+	flex-direction: row;
+}
+
+._book {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #fff;
+	margin: 0 18px 98px 0;
+	size: 237px;
+}
+
+._text {
+	font: 16px 'Roboto Bold', Arial, sans-serif;
+	padding-top: 248px;
+	margin-bottom: -10px;
+}
+
+._autor {
+	font: 16px 'Roboto Regular', Arial, sans-serif;
+}
+
+._color{
+	color: #959595;
 }

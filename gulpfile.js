@@ -4,20 +4,32 @@ var cssnano = require('gulp-cssnano');
 var clean = require('gulp-clean');
 var browserSync = require('browser-sync').create();
 var autoprefixer = require('gulp-autoprefixer');
+var rename = require ('gulp-rename');
+var postcss = require('gulp-postcss');
+var assets = require ('postcss-assets');
+var short = require('postcss-short');
 
 gulp.task('default', ['dev']);
-
 gulp.task('dev', ['build-dev', 'browser-sync', 'watch']);
 gulp.task('prod', ['clean'], function() {
 	gulp.run('build-dev');
 });
 
-gulp.task('build-dev', ['html', 'css-dev', 'assets',]);
+gulp.task('build-dev', ['html', 'css-dev', 'assets']);
 gulp.task('build-prod', ['html', 'css-prod', 'assets']);
 	
 gulp.task('css-dev', function () {
+	var processors = [
+		short,
+		assets ({
+			loadPaths: ['src/assets/img/'],
+			relativTo: 'src/styles/'
+		}),
+  ];
 	return gulp.src('./src/styles/*.css')
 		.pipe(concat('styles.css'))
+		.pipe(postcss(processors))
+		.pipe(rename('styleOut.css'))
 		.pipe(autoprefixer({
 			browser: ['last 2 versions']
 		}))
@@ -25,13 +37,22 @@ gulp.task('css-dev', function () {
 });
 
 gulp.task('css-prod', function () {
+		var processors = [
+		short,
+		assets ({
+			loadPaths: ['src/assets/img/'],
+			relativTo: 'src/styles/'
+		}),
+  ];
 	return gulp.src('./src/styles/*.css')
-		.pipe(concat('styles.css'))
-		.pipe(cssnano())
-		.pipe(autoprefixer({
+	
+	.pipe(concat('styles.css'))
+	.pipe(cssnano())
+	.pipe(rename('styleOut.css'))
+	.pipe(autoprefixer({
 			browser: ['last 2 versions']
 		}))
-		.pipe(gulp.dest('./build/styles/'));
+	.pipe(gulp.dest('./build/styles/'));
 });
 
 gulp.task('html', function () {
