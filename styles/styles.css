@@ -66,7 +66,7 @@ body {
 }
 
 .book-preview__img_big:hover {
-	background-color: #959595;
+	opacity: .5;
 	
 }
 
@@ -82,7 +82,7 @@ body {
 }
 
 .book-preview__img_small:hover {
-	background-color: #959595;
+	opacity: .5;
 }
 
 .book-preview__img_small:last-child {
@@ -273,7 +273,7 @@ body {
 }
 
 .recommendation ._book:hover {
-	background-color: #959595;
+	opacity: .5;
 }
 
 .recommendation ._text {
