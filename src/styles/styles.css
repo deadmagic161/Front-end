@@ -51,9 +51,8 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #fff;
-	width: 500px;
     margin-bottom: 0 0 15px 0;
-    height: 500px;
+	size: 501px;
 	transition: .5s;
 }
 
@@ -68,8 +67,7 @@ body {
 	background-position: center;
 	display: inline-block;
 	margin:13px 13px 0 0;
-    height: 112px;
-    width: 112px;
+    size: 113px 113px;
 	transition: .5s;
 }
 
