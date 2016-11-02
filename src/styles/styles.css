@@ -41,6 +41,7 @@ body {
     color: #999;
 }
 
+
 .book-preview {
 	display: inline-block;
 	vertical-align: top;
@@ -257,20 +258,23 @@ body {
     transition: background .3s linear; 
 }
 
- .recommendation ._head {
+.recommendation {
+	display: inline-block;
+	margin: 75px 70px 406px 0;
+	width: 520px;
+}
+
+.recommendation ._head {
 	font: 20px 'Roboto Bold', Arial, sans-serif;
 	margin: 0 0 36px;
 }
 
-.recommendation__container-item {
-	display:flex;
-	flex-direction: row;
-}
-
- .recommendation ._book {
+.recommendation ._book {
+	vertical-align: top;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #fff;
+	display: inline-block;
 	margin: 0 18px 98px 0;
 	size: 237px;
 	transition: .5s;
@@ -284,6 +288,7 @@ body {
 	font: 16px 'Roboto Bold', Arial, sans-serif;
 	margin-top: 248px;
 	margin-bottom: -10px;
+
 }
 
 .recommendation ._autor {
@@ -297,4 +302,9 @@ body {
 
 .recommendation ._color {
 	color: #959595;
+}
+
+.comments {
+	display: inline-block;
+	text-align: top;
 }
