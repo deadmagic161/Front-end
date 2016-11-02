@@ -92,7 +92,7 @@ body {
 	list-style-type: none;
 }
 
-.character{
+.character {
     display: inline-block;
 }
 
@@ -108,7 +108,7 @@ body {
     line-height: 1.714;
 } 
 
-.character__text{
+.character__text {
 	color: #232323;
 	margin-bottom: 60px;
 }
@@ -305,6 +305,30 @@ body {
 }
 
 .comments {
+	margin-top: -300px;
 	display: inline-block;
-	text-align: top;
+	vertical-align: top;
+}
+
+.comments ._head {
+	font: 20px 'Roboto Slab', Arial, sans-serif;
+	font-weight: bold;
+	margin: 0 0 29px;
+}
+
+
+.comments ._border {
+	border-bottom: 3px solid #355baa;
+	width: 400px;
+	content: none;
+}
+
+.comments ._submit {
+	background: #f0efef;
+	border: 3px solid #355baa;
+	color: #355baa;
+	display:inline-block;
+	font: 16px 'Roboto Bold', Arial, sans-serif;
+	font-weight: bold;
+	size: 168px 52px;
 }
