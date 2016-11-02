@@ -205,7 +205,7 @@ body {
 }
 
 .character-icons__link ._fb:hover {
-	background: inline('fb.svg') no-repeat;
+	background: inline('facebook.svg') no-repeat;
     background-size: 40px 40px;
 }
 
@@ -297,4 +297,8 @@ body {
 
 .recommendation ._color {
 	color: #959595;
+}
+
+.comment_avatar{
+	background: resolve('user_1.png');
 }
