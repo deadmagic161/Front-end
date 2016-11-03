@@ -305,7 +305,7 @@ body {
 }
 
 .comments {
-	margin-top: -300px;
+	margin-top: -360px;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -316,19 +316,69 @@ body {
 	margin: 0 0 29px;
 }
 
-
-.comments ._border {
-	border-bottom: 3px solid #355baa;
-	width: 400px;
-	content: none;
+.comments__feed {
+	display: inline-block;
 }
 
-.comments ._submit {
+.comments__feed ._line {
+	background: #355baa;
+	margin-right: 13px;
+	size: 365px 3px;
+}
+
+.comments ._button {
 	background: #f0efef;
-	border: 3px solid #355baa;
+	border: 2px solid #355baa;
 	color: #355baa;
-	display:inline-block;
-	font: 16px 'Roboto Bold', Arial, sans-serif;
-	font-weight: bold;
+	font: 18px 'Roboto Bold', Arial, sans-serif;
 	size: 168px 52px;
+}
+
+.comments ._button:hover {
+	background: #355baa;
+	color: #fff;
+}
+
+.comments ._textarea {
+	margin-top: 29px;
+}
+
+.comments__add {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.comments ._textarea-space {
+	font: 16px 'Roboto Regular', Arial, sans-serif;
+	padding: 11px 10px;
+	size: 529px 109px;
+	resize: none;
+}
+
+.comments__add-link {
+	font: 16px 'Roboto Regular', Arial, sans-serif;
+	text-decoration: none;
+}
+
+.comments ._description {
+	color: #a3a3a3;
+	font: 13px 'Roboto Regular', Arial, sans-serif;
+}
+
+.comments__submit {
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 0 44px 43px;
+}
+
+.comments ._send-button {
+	background: #bdcbe8;
+	border: 1px solid #bdcbe8;
+	color: #355baa;
+	font: 14px 'Roboto Regular', Arial, sans-serif;
+	padding: 13px 12px
+}
+.comments ._send-button:hover {
+	background: #355baa;
+	color: #fff;
 }
