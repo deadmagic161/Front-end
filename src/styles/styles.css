@@ -455,25 +455,39 @@ description__content {
  	margin:0;
  }
 
- .comment__review{
- 	display: block;
- }
+.comment__review, .comment__note,  .comment__sign{
+	display: block;
+	font: 13px 'Roboto Regular', Arial, sans-serif;
+ 	color: #a3a3a3;
+}
 
- .comment__note{
- 	display: block;
- }
+.comment__note{
+	margin: 0 0 19px 0;
+}
+.comment__review{
+	margin: 0 0 9px 0;
+}
 
  .comment__sign{
- 	display: block;
+ 	display: inline-block;
+ 	border-bottom: 1px dashed #a3a3a3;
  }
+.comment__reviw_number{
+	color: #232323;
+	font: 13px 'Roboto Regular', Arial, sans-serif;
+}
 
+.comment__note_number{
+	color: #00b526;
+	font: 13px 'Roboto Regular', Arial, sans-serif;
+}
  .comment-text__date{
  	display: block;
  }
 
  .comment-text{
     display: inline-block;
- 	width: 465px;
+ 	width: 370px;
  	vertical-align: top;
  }
 
@@ -481,6 +495,16 @@ description__content {
  	display: block;
  }
 
+.comment-text__name{
+	font: 18px 'Roboto Bold', Arial, sans-serif;
+	color: #355baa;
+	margin: 0 0 20px 0;
+}
+
+.comment-text__date{
+	font: 12px 'Roboto Regular', Arial, sans-serif;
+	color: #a3a3a3;
+}
 .comment-button{
 	position: relative;
 }
@@ -490,4 +514,13 @@ description__content {
 	width: 41px;
 	background: inline('arrow_down.svg') no-repeat;
 	background-size: 41px 41px;
+}
+
+.comment-text__opinion{
+	font: 16px 'Roboto Regular', Arial, sans-serif;
+	color: #232323;
+}
+
+.comment-avatar__picture{
+	margin: 0 25px 13px 0;
 }
