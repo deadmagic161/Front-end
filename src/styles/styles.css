@@ -382,3 +382,52 @@ body {
 	background: #355baa;
 	color: #fff;
 }
+ 
+.text{
+	display: inline-block;
+	vertical-align: top;	
+}
+.comment-avatar{
+	display: inline-block;
+}
+ 
+ .comment__name{
+ 	margin:0;
+ }
+
+ .comment__review{
+ 	display: block;
+ }
+
+ .comment__note{
+ 	display: block;
+ }
+
+ .comment__sign{
+ 	display: block;
+ }
+
+ .comment-text__date{
+ 	display: block;
+ }
+
+ .comment-text{
+    display: inline-block;
+ 	width: 465px;
+ 	vertical-align: top;
+ }
+
+ .comment-text__opinion{
+ 	display: block;
+ }
+
+.comment-button{
+	position: relative;
+}
+
+.comment-button__arrow{
+	height: 41px;
+	width: 41px;
+	background: inline('arrow_down.svg') no-repeat;
+	background-size: 41px 41px;
+}
