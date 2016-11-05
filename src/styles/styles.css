@@ -428,6 +428,7 @@ description__content {
 .comments__submit {
 	display: inline-block;
 	vertical-align: top;
+	margin: 0 0 50px 0;
 }
 
 .comments__submit-send-button {
@@ -471,6 +472,11 @@ description__content {
  .comment__sign{
  	display: inline-block;
  	border-bottom: 1px dashed #a3a3a3;
+ 	transition: border-bottom .3s linear;
+ }
+
+ .comment__sign:hover{
+ 	border-bottom: 0px;
  }
 .comment__reviw_number{
 	color: #232323;
@@ -489,6 +495,7 @@ description__content {
     display: inline-block;
  	width: 370px;
  	vertical-align: top;
+ 	margin: 0 0 75px 0;
  }
 
  .comment-text__opinion{
@@ -504,11 +511,25 @@ description__content {
 .comment-text__date{
 	font: 12px 'Roboto Regular', Arial, sans-serif;
 	color: #a3a3a3;
+	margin: 0 0 20px 0;
 }
 .comment-button{
 	position: relative;
 }
 
+.comment-button__reply{
+	font: 14px 'Roboto Regular', Arial, sans-serif;
+	color: #355baa;
+	border: 1px solid #355baa; 
+	padding: 11px 19px;
+	background-color: #f0efef;
+	transition: background-color, .3s linear;
+}
+
+.comment-button__reply:hover{
+	background-color: #355baa;
+	color: #fff;
+}
 .comment-button__arrow{
 	height: 41px;
 	width: 41px;
@@ -519,8 +540,11 @@ description__content {
 .comment-text__opinion{
 	font: 16px 'Roboto Regular', Arial, sans-serif;
 	color: #232323;
+	line-height: 1.5em;
+	margin: 0 0 29px 0;
 }
 
 .comment-avatar__picture{
 	margin: 0 25px 13px 0;
 }
+
