@@ -1,6 +1,10 @@
-html, body, ul, h1 {
+html, body, ul, h1, p {
     margin: 0;
     padding: 0;
+}
+
+li {
+    list-style-type: none;
 }
 
 a {
@@ -87,15 +91,25 @@ body {
 .book-preview__img_small:last-child {
 	margin: 0;
 }
-._margin-40 {
-    margin: 0 0 40px;
-}
+
 .description {
     font: 16px  'Roboto Regular', Arial, sans-serif;
     width: 565px;
     display: inline-block;
     vertical-align: top;
-	margin: 0 0 162px 0;
+	margin: 0 0 50px 0;
+}
+
+.description__content {
+    margin: 0 0 50px 0;
+}
+
+.description__content p:first-child {
+    margin: 0 0 40px 0;
+}
+
+.description__content__list {
+    margin: 0 0 40px 0;
 }
 .description__list {
 	list-style-type: none;
@@ -113,10 +127,47 @@ body {
 	margin: 0 0 35px 0;
 }
 
-description__content {
-	margin: 0 0 48px 0 ;
+.description__author ._font-style {
+    font-size: 22px;
+    font-weight: bold; 
+    color: #355baa;
 }
 
+.description__rating ._font-style {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 30px 0 0;
+}
+
+.description__rating__star-rating {
+    display: inline-block;
+    margin: 0 15px 0 0;
+}
+.star-rating__item {
+    background: inline('star.svg') no-repeat;
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    
+}
+
+.star-rating__item:hover {
+    background: inline('star_active.svg') no-repeat;
+}
+
+.description__theme__link {
+    color: #355baa;
+}
+
+.description__theme:before {
+    display: block;
+    content: '';
+    width: 33px;
+    height: 3px;
+    background: #355baa;
+    margin: 0 0 20px 0;
+}
 
 .character {
     display: inline-block;
