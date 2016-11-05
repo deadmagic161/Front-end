@@ -3,6 +3,9 @@ html, body, ul, h1 {
     padding: 0;
 }
 
+ul{
+	list-style: none;
+}
 a {
     text-decoration: none;
 }
@@ -234,7 +237,7 @@ description__content {
 }
 
 .character-icons__link ._fb:hover {
-	background: inline('fb.svg') no-repeat;
+	background: inline('facebook.svg') no-repeat;
     background-size: 40px 40px;
 }
 
@@ -487,6 +490,9 @@ description__content {
 	color: #00b526;
 	font: 13px 'Roboto Regular', Arial, sans-serif;
 }
+._comment__node_red{
+	color: #ed1c24;
+}
  .comment-text__date{
  	display: block;
  }
@@ -498,16 +504,35 @@ description__content {
  	margin: 0 0 75px 0;
  }
 
+.comment-text__header{
+	display: inline-block;
+	margin: 0 0 23px 0;
+}
  .comment-text__opinion{
  	display: block;
  }
 
+.comment-text__added{
+	display: block;
+	font: 13px 'Roboto Regular', Arial, sans-serif;
+	color: #a3a3a3;
+	margin: 0 0 16px 0;
+}
 .comment-text__name{
 	font: 18px 'Roboto Bold', Arial, sans-serif;
 	color: #355baa;
 	margin: 0 0 20px 0;
 }
 
+.coment-text__reply{
+	font: 14px 'Roboto Regular', Arial, sans-serif;
+	color: #959595;
+}
+
+._user-link{
+	font: 14px 'Roboto Regular', Arial, sans-serif;
+	color: #355baa;
+}
 .comment-text__date{
 	font: 12px 'Roboto Regular', Arial, sans-serif;
 	color: #a3a3a3;
@@ -523,19 +548,52 @@ description__content {
 	border: 1px solid #355baa; 
 	padding: 11px 19px;
 	background-color: #f0efef;
+	margin: 0 36px 0 0;
 	transition: background-color, .3s linear;
 }
 
+/*.comment-button__reply:after{
+	content: '';
+	position: absolute;
+	background: inline('arrow_down.svg');
+	height: 41px;
+	width: 41px;
+	right: 0;
+	bottom: 0;
+}*/
 .comment-button__reply:hover{
 	background-color: #355baa;
 	color: #fff;
 }
-.comment-button__arrow{
+
+.comment-button__likes{
+	font: 14px 'Roboto Regular', Arial, sans-serif;
+	color: #355baa;
+}
+
+.comment-button__likes:after{
+	content: '';
+	position: absolute;
+	height: 1px;
+	width: 237px;
+	background-color: #cdcdcd;
+	top: 20px;
+    left: 171px;
+}
+
+.comment-button__heart{
+	height: 15px;
+	width: 16px;
+	background: inline('heart.svg');
+	background-size: 16px 15px;
+	margin: 0 20px 0 0;
+}
+/*.comment-button__arrow{
 	height: 41px;
 	width: 41px;
 	background: inline('arrow_down.svg') no-repeat;
 	background-size: 41px 41px;
-}
+}*/
 
 .comment-text__opinion{
 	font: 16px 'Roboto Regular', Arial, sans-serif;
@@ -548,3 +606,10 @@ description__content {
 	margin: 0 25px 13px 0;
 }
 
+.added-file__list{
+	margin: 0 0 36px 0;
+}
+.added-file__item{
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
