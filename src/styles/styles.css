@@ -590,7 +590,8 @@ body {
 	color: #355baa;
 }
 
-.comment{
+.comment {
+	margin-bottom: 100px;
 	width: 100%;
 }
 .comment-text__date {
@@ -718,4 +719,11 @@ body {
 
 .comment__more-opinions:hover {
 	border-bottom: 0;
+}
+
+.footer {
+	display: inline-block;
+	border-bottom: 3px solid #355baa;
+	width: 100%;
+	margin-bottom: 60px;
 }
