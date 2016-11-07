@@ -148,7 +148,7 @@ body {
     margin: 0 15px 0 0;
 }
 .star-rating__item {
-    background: inline('star.svg') 20px no-repeat;
+    background: inline('star.svg') no-repeat;
     size: 20px;
     display: inline-block;
 }
