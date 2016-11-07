@@ -71,6 +71,7 @@ body {
     margin-bottom: 0 0 15px 0;
 	size: 501px;
 	transition: .5s;
+	cursor: pointer;
 }
 
 .book-preview__img_big:hover {
@@ -86,6 +87,7 @@ body {
 	margin:13px 13px 0 0;
     size: 113px 113px;
 	transition: .5s;
+	cursor: pointer;
 }
 
 .book-preview__img_small:hover {
@@ -151,6 +153,7 @@ body {
     background: inline('star.svg') no-repeat;
     size: 20px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .star-rating__item:hover {
@@ -372,6 +375,7 @@ body {
 	margin: 0 18px 18px 0;
 	size: 237px;
 	transition: .5s;
+	cursor: pointer;
 }
 
 .recommendation__item-photo:hover {
@@ -434,6 +438,7 @@ body {
 	position: absolute * 0 * *;
 	size: 168px 52px;
 	transition: background, color .3s linear;
+	cursor: pointer;
 }
 
 .comments__item-button:before {
@@ -489,6 +494,7 @@ body {
 	padding: 10px 13px;
 	margin: 12px * *;
 	transition: background, color .3s linear;
+	cursor: pointer;
 }
 .comments__submit-send-button:hover {
 	color: #fff #355baa;
@@ -605,6 +611,7 @@ body {
 	background-color: #f0efef;
 	margin: 0 36px 0 0;
 	transition: background-color, .3s linear;
+	cursor: pointer;
 }
 
 .comment-button__reply:hover{
@@ -632,6 +639,7 @@ body {
     display: inline-block;
     vertical-align: middle;
     transition: background .3s linear;
+    cursor: pointer;
 }
 
 .comment-button__heart:hover {
@@ -647,6 +655,7 @@ body {
 	display: inline-block;
 	vertical-align: middle;
 	transition: background .3s linear;
+	cursor: pointer;
 }
 
 ._arrow-up:hover {
@@ -660,6 +669,7 @@ body {
 	display: inline-block;
 	vertical-align: middle;
 	transition: background, .3s linear;
+	cursor: pointer;
 }
 
 ._arrow-down:hover{
@@ -687,7 +697,7 @@ body {
 .comment__more-opinions-wrapp {
 	float: right;
 	margin: 0 30px 0 ;
-	
+	cursor: pointer;
 }
 
 .comment__more-opinions {
