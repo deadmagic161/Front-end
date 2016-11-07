@@ -181,7 +181,7 @@
              </div>
 			
                 <div class="description__theme">
-                    <span class="_grey">Тема:</span> <a class="description__theme__link" href="#">Книги для дизайнеров</a>
+                    <span class="_grey"><h2 class="description__theme-title">Тема:</h2></span> <a class="description__theme__link" href="#">Книги для дизайнеров</a>
                 </div>
             </div>
 			<div class="comments">
@@ -197,21 +197,25 @@
 					<a class="comments__add-link" href="#">Прикрепить файл</a>
 				</div>
 					<span class="comments__add-description">
-						Допустимые форматы файлов: PDF, JPEG, PNG, GIF, RTF, DJV<br/>
-						Размер файла: не более 30 Мб
+						<div>
+							Допустимые форматы файлов: PDF, JPEG, PNG,GIF, RTF, DJV
+						</div>	 
+						<div>	
+							Размер файла: не более 30 Мб
+						</div>
 					</span>
 			</div>
 			<div class="comments__submit">
 				<button class="comments__submit-send-button" name="add comments" type="submit">Отправить</button>
 			</div>
-            <div class="comment">
+            <div class="comment-block">
                 <div class="comment-avatar">
                     <img src="assets/img/user_1.png" class="comment-avatar__picture"/>
-                    <span class="comment__review">Рецензия: 
+                    <lable class="comment__review">Рецензия: 
                         <span class="comment__reviw_number">50</span>
-                    </span>
-                    <span class="comment__note">Оценок 
-                        <span class="comment__note_number">+1833</span></span>
+                    </lable>
+                    <lable class="comment__note">Оценок 
+                        <span class="comment__note_number">+1833</span></lable>
                     <a href="#" class="comment__sign">Подписаться</a>
                 </div>
                 <div class="comment-text">
@@ -228,7 +232,7 @@
                     </div>
                 </div>
             </div>
-            <div class="comment">
+            <div class="comment-user">
                 <div class="comment-avatar">
                     <img src="assets/img/user_2.png" class="comment-avatar__picture"/>
                     <span class="comment__review">Рецензия: 
@@ -247,7 +251,7 @@
                     <span class="comment-text__date">20.09.2016 в 11:50</span>
                     <span class="comment-text__opinion">
                         <a href="#"class="_user-link">stylyx,</a>
-                        Марс был пуст, пока на нем не появились мы. В 2026 году первые колонсты с Земли отправляются на Красную планету. Их миссия - создани благоприятных условий для жизни на Марсе, на поверхности которого первопроходцев уже дожидаются разнообразные устройства и механизмы, заброшенные сюда грузовыми кораблями.
+                        <p>Марс был пуст, пока на нем не появились мы. В 2026 году первые колонсты с Земли отправляются на Красную планету. Их миссия - создани благоприятных условий для жизни на Марсе, на поверхности которого первопроходцев уже дожидаются разнообразные устройства и механизмы, заброшенные сюда грузовыми кораблями.</p>
                     </span> 
                     <ul class="added-file__list">
                         <li class="added-file__item"><img src="assets/img/planet.png" class="added-file__picture"></li>
@@ -263,14 +267,15 @@
                     </div>
                 </div>
             </div>
-            <div class="comment">
+            <div class="comment-user">
                  <div class="comment-avatar">
                     <img src="assets/img/user_3.png" class="comment-avatar__picture"/>
-                    <span class="comment__review">Рецензия: 
+                    <lable class="comment__review">Рецензия: 
                         <span class="comment__reviw_number">0</span>
-                    </span>
-                    <span class="comment__note">Оценок 
-                        <span class="comment__note_number _comment__node_red"> -5</span></span>
+                    </lable>
+                    <lable class="comment__note">Оценок 
+                        <span class="comment__note_number _comment__node_red"> -5</span>
+                     </lable>
                     <a href="#" class="comment__sign">Подписаться</a>
                 </div>
                 <div class="comment-text">
@@ -290,7 +295,10 @@
                         <span class="comment-button__arrow _arrow-down"></span>
                     </div>
                 </div>
-                <div class="comment__more-opinions">Больше отзывов</div>
+				<div class="comment__more-opinions-wrapp">
+                	<div class="comment__more-opinions">Больше отзывов
+                </div>
+                </div>
             </div>
 	   </div>
 	</div>
