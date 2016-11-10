@@ -171,7 +171,6 @@ body {
 	float: left;
 	height: 18px;
     z-index: 1;
-
 }
 
 .star li span[class*="star"] {
@@ -188,64 +187,84 @@ body {
 	left: 0;
 	background: inline('rating-star.png') left bottom;
 }
+
 .star li span.star-rating__item1{
 	left: 0;
 }
+
 .star li span.star-rating__item1:hover {
 	width: 23px;
 }
 
+
 .star li span.star-rating__item2{
 	left: 23px;
 }
+
 .star li span.star-rating__item2:hover {
 	width: 46px;
 }
+
 .star li span.star-rating__item3{
 	left: 46px;
 }
+
 .star li span.star-rating__item3:hover {
 	width: 69px;
 }
+
 .star li span.star-rating__item4{
 	left: 69px;
 }
+
 .star li span.star-rating__item4:hover {
 	width: 92px;
 }
+
 .star li span.star-rating__item5{
 	left: 92px;
 }
+
 .star li span.star-rating__item5:hover {
 	width: 115px;
 }
+
 .star li span.star-rating__item6{
 	left: 115px;
 }
+
 .star li span.star-rating__item6:hover {
 	width: 138px;
 }
+
 .star li span.star-rating__item7{
 	left: 138px;
 }
+
 .star li span.star-rating__item7:hover {
 	width: 161px;
 }
+
 .star li span.star-rating__item8{
 	left: 161px;
 }
+
 .star li span.star-rating__item8:hover {
 	width: 184px;
 }
+
 .star li span.star-rating__item9 {
 	left: 184px;
 }
+
 .star li span.star-rating__item9:hover {
 	width: 207px;
 }
+
 .star li span.star-rating__item10 {
 	left: 207px;
 }
+
 .star li span.star-rating__item10:hover {
 	width: 230px
 }
