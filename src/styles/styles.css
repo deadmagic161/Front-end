@@ -165,7 +165,6 @@ body {
 	width: 230px;
 	height: 18px;
 	background: inline('rating-star.png');
-	margin: 10px 0;
 }
 
 .star li {
@@ -238,16 +237,16 @@ body {
 .star li span.star-rating__item8:hover {
 	width: 184px;
 }
-star li span.star-rating__item9 {
+.star li span.star-rating__item9 {
 	left: 184px;
 }
-star li span.star-rating__item9:hover {
+.star li span.star-rating__item9:hover {
 	width: 207px;
 }
-star li span.star-rating__item10 {
+.star li span.star-rating__item10 {
 	left: 207px;
 }
-star li span.star-rating__item10:hover {
+.star li span.star-rating__item10:hover {
 	width: 230px
 }
 
