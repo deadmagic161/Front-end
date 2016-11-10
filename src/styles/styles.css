@@ -149,15 +149,106 @@ body {
     display: inline-block;
     margin: 0 15px 0 0;
 }
-.star-rating__item {
-    background: inline('star.svg') no-repeat;
-    size: 20px;
-    display: inline-block;
-    cursor: pointer;
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
 }
 
-.star-rating__item:hover {
-    background: inline('star_active.svg') no-repeat;
+.clearfix:after {
+	clear: both;
+}
+
+.star {
+	position: relative;
+	list-style: none;
+	width: 230px;
+	height: 18px;
+	background: inline('rating-star.png');
+	margin: 10px 0;
+}
+
+.star li {
+	float: left;
+	height: 17px;
+    z-index: 1;
+
+}
+
+.star li span[class*="star"] {
+	position: absolute;
+	z-index: 5;
+	display: inline-block;
+	width: 18px;
+	height: 17px;
+	cursor: pointer;
+}
+
+.star li span[class*="star"]:hover {
+	z-index: 2;
+	left: 0;
+	background: inline('rating-star.png') left bottom;
+}
+.star li span.star-rating__item1{
+	left: 0;
+}
+.star li span.star-rating__item1:hover {
+	width: 18px;
+}
+
+.star li span.star-rating__item2{
+	left: 18px;
+}
+.star li span.star-rating__item2:hover {
+	width: 36px;
+}
+.star li span.star-rating__item3{
+	left: 36px;
+}
+.star li span.star-rating__item3:hover {
+	width: 54px;
+}
+.star li span.star-rating__item4{
+	left: 54px;
+}
+.star li span.star-rating__item4:hover {
+	width: 72px;
+}
+.star li span.star-rating__item5{
+	left: 72px;
+}
+.star li span.star-rating__item5:hover {
+	width: 90px;
+}
+.star li span.star-rating__item6{
+	left: 90px;
+}
+.star li span.star-rating__item6:hover {
+	width: 108px;
+}
+.star li span.star-rating__item7{
+	left: 108px;
+}
+.star li span.star-rating__item7:hover {
+	width: 126px;
+}
+.star li span.star-rating__item8{
+	left: 126px;
+}
+.star li span.star-rating__item8:hover {
+	width: 144px;
+}
+star li span.star-rating__item9 {
+	left: 144px;
+}
+star li span.star-rating__item9:hover {
+	width: 162px;
+}
+star li span.star-rating__item10 {
+	left: 162px;
+}
+star li span.star-rating__item10:hover {
+	width: 180px
 }
 
 .description__theme-title {
