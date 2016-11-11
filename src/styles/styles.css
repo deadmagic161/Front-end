@@ -422,7 +422,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0 0 110px;
-	size: 520px *;
+	width: 520px;
 }
 
 .comments__item-title {
@@ -505,7 +505,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0 0 50px 0;
-	min-size: 100px *;
+	max-width: 100px ;
 }
 
 .comments__submit-send-button {
@@ -514,7 +514,7 @@ body {
 	display: inline-block;
 	font: 14px 'Roboto Regular', Arial, sans-serif;
 	outline: none;
-	padding: 10px 13px;
+	padding: 10px 15px;
 	margin: 12px * *;
 	transition: .5s;
 	cursor: pointer;
@@ -577,7 +577,7 @@ body {
 
 .comment-text {
     display: inline-block;
- 	min-size: 391px *;
+ 	size: 391px *;
  	vertical-align: top;
  	margin: 0 0 75px 0;
  }
@@ -612,9 +612,6 @@ body {
 	color: #355baa;
 }
 
-.comment-block {
-	margin: * * 100px;
-}
 
 .comment-text__date {
 	font: 12px 'Roboto Regular', Arial, sans-serif;
@@ -680,6 +677,8 @@ body {
 	vertical-align: middle;
 	transition: background .3s linear;
 	cursor: pointer;
+	position: absolute;
+	right: 0;
 }
 
 ._arrow-up:hover {
@@ -694,6 +693,8 @@ body {
 	vertical-align: middle;
 	transition: background, .3s linear;
 	cursor: pointer;
+	position: absolute;
+	right: 0;
 }
 
 ._arrow-down:hover{
