@@ -136,6 +136,7 @@ body {
 }
 
 .description__author ._bold {
+	cursor: pointer;
     font-size: 22px;
     font-weight: bold; 
     color: #355baa;
@@ -145,6 +146,10 @@ body {
     font-weight: bold;
     font-size: 20px;
     margin: 0 30px 0 0;
+}
+
+.description__author ._bold:hover {
+	text-decoration: underline;
 }
 
 .description__rating__star-rating {
@@ -500,6 +505,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0 0 50px 0;
+	size: 100px * ;
 }
 
 .comments__submit-send-button {
@@ -508,7 +514,7 @@ body {
 	display: inline-block;
 	font: 14px 'Roboto Regular', Arial, sans-serif;
 	outline: none;
-	padding: 10px 13px;
+	padding: 10px 15px;
 	margin: 12px * *;
 	transition: .5s;
 	cursor: pointer;
@@ -606,9 +612,6 @@ body {
 	color: #355baa;
 }
 
-.comment-block {
-	margin: * * 100px;
-}
 
 .comment-text__date {
 	font: 12px 'Roboto Regular', Arial, sans-serif;
@@ -674,6 +677,7 @@ body {
 	vertical-align: middle;
 	transition: background .3s linear;
 	cursor: pointer;
+	position: absolute * 0 * *;
 }
 
 ._arrow-up:hover {
@@ -688,6 +692,7 @@ body {
 	vertical-align: middle;
 	transition: background, .3s linear;
 	cursor: pointer;
+	position: absolute * 0 * *;
 }
 
 ._arrow-down:hover{
@@ -743,9 +748,10 @@ body {
 	border-bottom: 0;
 }
 
-.footer {
+.footer:before {
 	display: inline-block;
-	border-bottom: 3px solid #355baa;
-	size: 100% *;
+    content: '';
+    background: #355baa;
+	size: 100% 3px;
 	margin: * * 60px;
 }
