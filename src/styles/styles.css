@@ -505,7 +505,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0 0 50px 0;
-	max-width: 100px ;
+	size: 100px * ;
 }
 
 .comments__submit-send-button {
@@ -677,8 +677,7 @@ body {
 	vertical-align: middle;
 	transition: background .3s linear;
 	cursor: pointer;
-	position: absolute;
-	right: 0;
+	position: absolute * 0 * *;
 }
 
 ._arrow-up:hover {
@@ -693,8 +692,7 @@ body {
 	vertical-align: middle;
 	transition: background, .3s linear;
 	cursor: pointer;
-	position: absolute;
-	right: 0;
+	position: absolute * 0 * *;
 }
 
 ._arrow-down:hover{
