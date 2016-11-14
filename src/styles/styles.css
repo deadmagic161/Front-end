@@ -732,13 +732,22 @@ body {
 	background-size: 41px 41px;
 	display: inline-block;
 	vertical-align: middle;
-	transition: background, .3s linear;
+	transition: background, .5s linear;
 	cursor: pointer;
 	position: absolute * 0 * *;
 }
 
 ._arrow-down:hover{
 	background: inline('arrow_down_active.svg') no-repeat;
+}
+
+._arrow-down-show {
+	background: inline('arrow_up.svg') no-repeat;
+	transition: background .5s;
+}
+
+._arrow-down-show:hover {
+	background: inline('arrow_up_active.svg');
 }
 
 .comment-text__opinion {
@@ -751,7 +760,7 @@ body {
 }
 
 .comment-text__opinion-new {
-	max-height: 150px;
+	max-height: 300px;
 }
 
 .comment-avatar__picture {
