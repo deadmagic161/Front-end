@@ -745,6 +745,13 @@ body {
 	font: 16px/1.5em 'Roboto Regular', Arial, sans-serif;
 	color: #232323;
 	margin: 0 0 29px 0;
+	max-height: 75px;
+	overflow: hidden;
+	transition: max-height 1s;
+}
+
+.comment-text__opinion-new {
+	max-height: 150px;
 }
 
 .comment-avatar__picture {
