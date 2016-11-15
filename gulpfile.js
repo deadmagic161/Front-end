@@ -85,9 +85,8 @@ gulp.task('assets', function() {
 });
 
 gulp.task('scripts', function () {
-	return gulp.src('.src/js/*.js')
+	return gulp.src('./src/js/*.js')
 
 	.pipe(concat('scripts.js'))
-	.pipe(rename('scriptsOut'))
-	.pipe(dest('./build/js/'))
+	.pipe(gulp.dest('./build/js/'))
 })
