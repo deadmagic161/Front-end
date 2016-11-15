@@ -750,6 +750,15 @@ body {
 	background: inline('arrow_up_active.svg');
 }
 
+._arrow-up-show {
+	background: inline('arrow_down.svg') no-repeat;
+	transition: background .5s;
+}
+
+._arrow-up-show:hove {
+	background: inline('arrow_down_active.svg') no-repeat;
+}
+
 .comment-text__opinion {
 	font: 16px/1.5em 'Roboto Regular', Arial, sans-serif;
 	color: #232323;
