@@ -186,84 +186,84 @@ body {
 	background: inline('rating-star.png') left bottom;
 }
 
-.star li span.star-rating__item1{
+.star-rating__item[data-item="1"] {
 	left: 0;
 }
 
-.star li span.star-rating__item1:hover {
+.star-rating__item[data-item="1"]:hover {
 	size: 23px *;
 }
 
 
-.star li span.star-rating__item2{
+.star-rating__item[data-item="2"] {
 	left: 23px;
 }
 
-.star li span.star-rating__item2:hover {
+.star-rating__item[data-item="2"]:hover {
 	size: 46px *;
 }
 
-.star li span.star-rating__item3{
+.star-rating__item[data-item="3"] {
 	left: 46px;
 }
 
-.star li span.star-rating__item3:hover {
+.star-rating__item[data-item="3"]:hover {
 	size: 69px *;
 }
 
-.star li span.star-rating__item4{
+.star-rating__item[data-item="4"] {
 	left: 69px;
 }
 
-.star li span.star-rating__item4:hover {
+.star-rating__item[data-item="4"]:hover {
 	size: 92px *;
 }
 
-.star li span.star-rating__item5{
+.star-rating__item[data-item="5"] {
 	left: 92px;
 }
 
-.star li span.star-rating__item5:hover {
+.star-rating__item[data-item="5"]:hover {
 	size: 115px *;
 }
 
-.star li span.star-rating__item6{
+.star-rating__item[data-item="6"] {
 	left: 115px;
 }
 
-.star li span.star-rating__item6:hover {
+.star-rating__item[data-item="6"]:hover {
 	size: 138px *;
 }
 
-.star li span.star-rating__item7{
+.star-rating__item[data-item="7"] {
 	left: 138px;
 }
 
-.star li span.star-rating__item7:hover {
+.star-rating__item[data-item="7"]:hover {
 	size: 161px *;
 }
 
-.star li span.star-rating__item8{
+.star-rating__item[data-item="8"] {
 	left: 161px;
 }
 
-.star li span.star-rating__item8:hover {
+.star-rating__item[data-item="8"]:hover {
 	size: 184px *;
 }
 
-.star li span.star-rating__item9 {
+.star-rating__item[data-item="9"] {
 	left: 184px;
 }
 
-.star li span.star-rating__item9:hover {
+.star-rating__item[data-item="9"]:hover {
 	size: 207px *;
 }
 
-.star li span.star-rating__item10 {
+.star-rating__item[data-item="10"] {
 	left: 207px;
 }
 
-.star li span.star-rating__item10:hover {
+.star-rating__item[data-item="10"]:hover {
 	size: 230px *;
 }
 
