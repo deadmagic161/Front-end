@@ -1,7 +1,7 @@
-var follow = document.getElementById('follow');
-follow.onclick = function() {
-    if (follow.textContent == 'Отписаться') {
-    	follow.textContent = 'Подписаться';
-    } else {follow.textContent = 'Отписаться'}
-    
-};
+var follow = document.querySelectorAll('.comment__sign');
+for (var comment__sign of follow) {
+	comment__sign.addEventListener('click', function(event) {
+		event.target.classList.toggle('_follow');
+	})
+}
+
