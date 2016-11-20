@@ -628,9 +628,6 @@ body {
 	display: inline-block;
 	margin: 0 0 23px 0;
 }
- .comment-text__opinion {
- 	display: block;
- }
 
 .comment-text__added {
 	display: block;
@@ -726,7 +723,7 @@ body {
 	background: inline('arrow_down_active.svg') no-repeat;
 }
 
-.comment-text ._open .comment_button__arrow  {
+.comment-text ._open .comment_button__arrow {
 	background: inline('arrow_up.svg') no-repeat;
 	transition: background .5s linear;
 }
@@ -735,18 +732,19 @@ body {
 	background: inline('arrow_up_active.svg');
 }
 
-.comment-text ._show .comment-text__opinion {
-	max-height: 200px;
-} 
-
 .comment-text__opinion {
 	font: 16px/1.5em 'Roboto Regular', Arial, sans-serif;
+	display: block;
 	color: #232323;
 	margin: 0 0 29px 0;
 	max-height: 75px;
 	overflow: hidden;
 	transition: max-height 1s;
 }
+
+.comment-text ._open .comment-text__opinion {
+	max-height: 500px;
+} 
 
 .comment-avatar__picture {
 	margin: 0 25px 13px 0;

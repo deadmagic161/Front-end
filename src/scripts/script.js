@@ -4,7 +4,6 @@ window.onload = function () {
 		comment_button__arrow.addEventListener('click', function(event) {
 			var parent = event.target.parentNode;
 			parent.classList.toggle('_open');
-			parent.classList.toggle('_show');
 		});
 	}
 };
