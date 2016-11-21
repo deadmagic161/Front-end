@@ -708,7 +708,7 @@ body {
 	background-size: 16px 15px;
 }
 
-._arrow_down {
+._down {
 	size: 41px;
 	background: inline('arrow_down.svg') no-repeat;
 	background-size: 41px 41px;
@@ -719,7 +719,7 @@ body {
 	position: absolute * 0 * *;
 }
 
-._arrow_down:hover {
+._down:hover {
 	background: inline('arrow_down_active.svg') no-repeat;
 }
 
