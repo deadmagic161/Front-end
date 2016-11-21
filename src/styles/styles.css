@@ -723,12 +723,12 @@ body {
 	background: inline('arrow_down_active.svg') no-repeat;
 }
 
-.comment-text ._open .comment_button__arrow {
+.comment-text._open .comment_button__arrow {
 	background: inline('arrow_up.svg') no-repeat;
 	transition: background .5s linear;
 }
 
-.comment-text ._open .comment_button__arrow:hover {
+.comment-text._open .comment_button__arrow:hover {
 	background: inline('arrow_up_active.svg');
 }
 
@@ -742,8 +742,8 @@ body {
 	transition: max-height 1s;
 }
 
-.comment-text ._open .comment-text__opinion {
-	max-height: 500px;
+.comment-text._open .comment-text__opinion {
+	max-height: 300px;
 } 
 
 .comment-avatar__picture {
