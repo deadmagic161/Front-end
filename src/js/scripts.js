@@ -5,3 +5,9 @@ for (var comment__sign of follow) {
 	})
 }
 
+var stars = document.querySelectorAll('.star_rating__item');
+for (var star_rating__item of stars) {
+	star_rating__item.addEventListener('click', function(event) {
+		event.target.classList.toggle('_activeStar');
+	})
+}
