@@ -571,7 +571,17 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0 0 110px;
+	max-height: 1500px;
 	width: 520px;
+	transition : max-height 1s;
+}
+
+.comments._show {
+	max-height: 3000px;
+}
+
+.comment-user._unload {
+	display: none;
 }
 
 .comments__item-title {
