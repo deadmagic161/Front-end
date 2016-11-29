@@ -330,6 +330,55 @@ body {
 	left: 0;
 }
 
+/*Цифра рейтинга по клику - Start*/
+.star_rating__item._activeStar:before {
+	font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    right: 30px;
+}
+
+.star_rating__item[data-item="1"]._activeStar:before {
+	content: "1";
+}
+
+.star_rating__item[data-item="2"]._activeStar:before {
+	content: "2";
+}
+
+.star_rating__item[data-item="3"]._activeStar:before {
+	content: "3";
+}
+
+.star_rating__item[data-item="4"]._activeStar:before {
+	content: "4";
+}
+
+.star_rating__item[data-item="5"]._activeStar:before {
+	content: "5";
+}
+
+.star_rating__item[data-item="6"]._activeStar:before {
+	content: "6";
+}
+
+.star_rating__item[data-item="7"]._activeStar:before {
+	content: "7";
+}
+
+.star_rating__item[data-item="8"]._activeStar:before {
+	content: "8";
+}
+
+.star_rating__item[data-item="9"]._activeStar:before {
+	content: "9";
+}
+
+.star_rating__item[data-item="10"]._activeStar:before {
+	content: "10";
+}
+/*Цифра рейтинга по клику - End*/
+
 .description__theme-title {
 	display: inline-block;
 	font: 16px 'Roboto Regular', Arial, sans-serif;
