@@ -27,6 +27,13 @@ body {
     margin: 0 auto;
 }
 
+.content:after {
+	clear: both;
+	content: '';
+	display: block;
+	height: 10px;
+}
+
 .header{
 	margin: 0 0 50px 0;
 }
@@ -514,6 +521,7 @@ body {
 	display: inline-block;
 	margin : 0 60px 0px 0;
 	size: 515px *;
+	margin:0 0 110px;
 }
 
 .recommendation__item-title {
