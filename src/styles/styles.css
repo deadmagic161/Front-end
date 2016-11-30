@@ -580,6 +580,10 @@ body {
 	max-height: 3000px;
 }
 
+.comment__more-opinions._hide {
+	display: none;
+}
+
 .comment-user._unload {
 	display: none;
 }

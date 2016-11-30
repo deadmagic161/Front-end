@@ -6,23 +6,24 @@
 			parent.classList.toggle('_open');
 		});
 	}
-
+	var block = document.getElementsByClassName('comment-user');
 	var more = document.getElementById("more-comments");
 
 	function load () {
-		var block1 = document.getElementById('block1');
-		var block2 = document.getElementById('block2');
-  		block1.classList.add('_unload');
-  		block2.classList.add('_unload');
-}
+			for (var i = 0; i < block.length; i++ ) {
+  				block[i].classList.add('_unload');
+  	}
+  		more.addEventListener('click', function() {
+  			var load = document.querySelector('._unload');
+  			var show = document.querySelector('.comments');
+  			load && load.classList.remove('_unload');
+  			show && show.classList.add('_show');
 
-	more.onclick = function() {
-		var load = document.querySelector('._unload');
-  		var show = document.querySelector('.comments');
-  		load.classList.remove('_unload');
-  		show.classList.add('_show');
-}
-
+  			if(!block[block.length-1].classList.contains('_unload')){
+  				more.classList.add('_hide');
+  			}
+  		})
+  	}
 
 	var follow = document.querySelectorAll('.comment__sign');
 	
@@ -31,5 +32,4 @@
 		event.target.classList.toggle('_follow');
 	})
 }
-
 window.onload = load();
