@@ -6,12 +6,12 @@
 			parent.classList.toggle('_open');
 		});
 	}
-	var block = document.getElementsByClassName('comment-user');
-	var more = document.getElementById("more-comments");
+	var blocks = document.getElementsByClassName('comment-user');
+	var more = document.getElementById('more-comments');
 
-	function load () {
-			for (var i = 0; i < block.length; i++ ) {
-  				block[i].classList.add('_unload');
+	function load() {
+			for (var i = 0; i < blocks.length; i++ ) {
+  				blocks[i].classList.add('_unload');
   	}
   		more.addEventListener('click', function() {
   			var load = document.querySelector('._unload');
@@ -19,7 +19,7 @@
   			load && load.classList.remove('_unload');
   			show && show.classList.add('_show');
 
-  			if(!block[block.length-1].classList.contains('_unload')){
+  			if(!blocks[blocks.length-1].classList.contains('_unload')){
   				more.classList.add('_hide');
   			}
   		})

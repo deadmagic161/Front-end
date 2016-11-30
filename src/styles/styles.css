@@ -521,7 +521,7 @@ body {
 	display: inline-block;
 	margin : 0 60px 0px 0;
 	size: 515px *;
-	margin:0 0 110px;
+	margin: 0 0 110px;
 }
 
 .recommendation__item-title {
@@ -581,7 +581,7 @@ body {
 	margin: 0 0 110px;
 	max-height: 1500px;
 	width: 520px;
-	transition : max-height 1s;
+	transition: max-height 1s;
 }
 
 .comments._show {
