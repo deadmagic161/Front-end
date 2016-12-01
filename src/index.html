@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/styleOut.css">
+    
 </head>
 <body>
     <div class="wrapper">
@@ -152,21 +153,41 @@
 		<div class="right-content">
 		 <div class="description">
                 <h1 class="description__item-title">Бла-бла-бла, или Что делать, когда слова не работают</h1>
-             <div class="description__author"><span class="_grey">Автор:</span> <a class="_bold">Дэн Роэм</a></div>
-             <div class="description__rating">
-             	<span class="_grey">Рэйтинг:</span> 
-             	<span class="_bold">8.57</span> 
-               <div class="description__rating__star-rating">
-                   <span class="star-rating__item"></span>
-				   <span class="star-rating__item"></span>
-                   <span class="star-rating__item"></span>
-				   <span class="star-rating__item"></span>
-				   <span class="star-rating__item"></span>
-				   <span class="star-rating__item"></span>
-				   <span class="star-rating__item"></span>
-				   <span class="star-rating__item"></span>
-				   <span class="star-rating__item"></span>
-				   <span class="star-rating__item"></span>
+             <div class="description__author"><span class="_grey">Автор:</span> <span class="_bold">Дэн Роэм</span></div>
+             <div class="description__rating"><span class="_grey">Рэйтинг:</span> <span class="_bold">8.57</span> 
+                <div class="description__rating__star-rating">
+                  <ul class="clearfix star">  
+                    <li>
+                      <span class="star-rating__item" data-item="1"></span>
+                    </li>
+                    <li>
+                      <span class="star-rating__item" data-item="2"></span>
+                    </li>
+                    <li>
+                      <span class="star-rating__item" data-item="3"></span>
+                    </li>
+                    <li>
+                      <span class="star-rating__item" data-item="4"></span>
+                    </li>
+                    <li>
+                      <span class="star-rating__item" data-item="5"></span>
+                    </li>
+                    <li>
+                      <span class="star-rating__item" data-item="6"></span>
+                    </li>
+                    <li>
+                      <span class="star-rating__item" data-item="7"></span>
+                    </li>
+                    <li>
+                      <span class="star-rating__item" data-item="8"></span>
+                    </li>
+                    <li>
+                      <span class="star-rating__item" data-item="9"></span>
+                    </li>
+                    <li>
+                      <span class="star-rating__item" data-item="10"></span>
+                    </li>
+                  </ul>
                 </div>
                  (Оценило: 10)
              </div>
@@ -209,7 +230,7 @@
 			<div class="comments__submit">
 				<button class="comments__submit-send-button" name="add comments" type="submit">Отправить</button>
 			</div>
-            <div class="comment-block">
+            <div class="comment-user">
                 <div class="comment-avatar">
                     <img src="assets/img/user_1.png" class="comment-avatar__picture"/>
                     <lable class="comment__review">Рецензия: 
@@ -217,19 +238,20 @@
                     </lable>
                     <lable class="comment__note">Оценок 
                         <span class="comment__note_number">+1833</span></lable>
-                    <a href="#" class="comment__sign">Подписаться</a>
+                    <a href="#" class="comment__sign"></a>
                 </div>
                 <div class="comment-text">
                     <div class="comment-text__header">
                         <span class="comment-text__name">stylix</span>
                     </div>
                     <span class="comment-text__date">18.09.2016 в 18:00</span>
-                    <span class="comment-text__opinion">Марс был пуст, пока на нем не появились мы. В 2026 году первые колонсты с Земли отправляются на Красную планету. Их миссия - создани благоприятных условий для жизни на Марсе, на поверхности которого первопроходцев уже дожидаются разнообразные устройства и механизмы, заброшенные сюда грузовыми кораблями.</span>
+                    <span class="comment-text__opinion">
+                    Марс был пуст, пока на нем не появились мы. В 2026 году первые колонсты с Земли отправляются на Красную планету. Их миссия - создани благоприятных условий для жизни на Марсе, на поверхности которого первопроходцев уже дожидаются разнообразные устройства и механизмы, заброшенные сюда грузовыми кораблями.</span>
                     <div class="comment-button">
                         <button class="comment-button__reply" name="reply" type="button">Ответить</button>
                         <span class="comment-button__heart"></span>
                         <span class="comment-button__likes"> 14</span>
-                        <span class="comment-button__arrow _arrow-down"></span>
+                        <span class="comment_button__arrow"></span>
                     </div>
                 </div>
             </div>
@@ -241,7 +263,7 @@
                     </span>
                     <span class="comment__note">Оценок 
                         <span class="comment__note_number">+3024</span></span>
-                    <a href="#" class="comment__sign">Отписаться</a>
+                    <a href="#" class="comment__sign"></a>
                 </div>
                  <div class="comment-text">
                     <div class="comment-text__header">
@@ -251,9 +273,9 @@
                     </div>
                     <span class="comment-text__date">20.09.2016 в 11:50</span>
                     <span class="comment-text__opinion">
-                        <a href="#"class="_user-link">stylyx,</a>
-                        <p>Марс был пуст, пока на нем не появились мы. В 2026 году первые колонсты с Земли отправляются на Красную планету. Их миссия - создани благоприятных условий для жизни на Марсе, на поверхности которого первопроходцев уже дожидаются разнообразные устройства и механизмы, заброшенные сюда грузовыми кораблями.</p>
-                    </span> 
+                        <a href="#" class="_user-link">stylyx,</a>
+                        Марс был пуст, пока на нем не появились мы. В 2026 году первые колонсты с Земли отправляются на Красную планету. Их миссия - создани благоприятных условий для жизни на Марсе, на поверхности которого первопроходцев уже дожидаются разнообразные устройства и механизмы, заброшенные сюда грузовыми кораблями.
+                    </span>
                     <ul class="added-file__list">
                         <li class="added-file__item"><img src="assets/img/planet.png" class="added-file__picture"></li>
                         <li class="added-file__item"><img src="assets/img/rtf.png" class="added-file__picture"></li>
@@ -264,7 +286,7 @@
                         <button class="comment-button__reply" name="reply" type="button">Ответить</button>
                         <span class="comment-button__heart"></span>
                         <span class="comment-button__likes"> 21</span>
-                        <span class="comment-button__arrow _arrow-up"></span>
+                        <span class="comment_button__arrow _down"></span>
                     </div>
                 </div>
             </div>
@@ -277,7 +299,7 @@
                     <lable class="comment__note">Оценок 
                         <span class="comment__note_number _comment__node_red"> -5</span>
                      </lable>
-                    <a href="#" class="comment__sign">Подписаться</a>
+                    <a href="#" id="follow" class="comment__sign"></a>
                 </div>
                 <div class="comment-text">
                 <div class="comment-text__header">
@@ -293,12 +315,70 @@
                         <button class="comment-button__reply" name="reply" type="button">Ответить</button>
                         <span class="comment-button__heart"></span>
                         <span class="comment-button__likes"> 20</span>
-                        <span class="comment-button__arrow _arrow-down"></span>
+                        <span class="comment_button__arrow _down"></span>
                     </div>
                 </div>
-				<div class="comment__more-opinions-wrapp">
-                	<div class="comment__more-opinions">Больше отзывов
+            </div>
+             <div class="comment-user">
+                 <div class="comment-avatar">
+                    <img src="assets/img/ded_moroz.jpg" class="comment-avatar__picture"/>
+                    <lable class="comment__review">Рецензия: 
+                        <span class="comment__reviw_number">5</span>
+                    </lable>
+                    <lable class="comment__note">Оценок 
+                        <span class="comment__note_number _comment__node_red"> -5</span>
+                     </lable>
+                    <a href="#" id="follow" class="comment__sign"></a>
                 </div>
+                <div class="comment-text">
+                <div class="comment-text__header">
+                    <span class="comment-text__name">Дед Мороз</span>
+                </div>
+                    <span class="comment-text__date">31.12.2016 в 15:02</span>
+                    <span class="comment-text__opinion">
+                        <span class="comment-text__opinion_link">
+                        Советую всем)
+                        </span>
+                    </span>
+                    <div class="comment-button">
+                        <button class="comment-button__reply" name="reply" type="button">Ответить</button>
+                        <span class="comment-button__heart"></span>
+                        <span class="comment-button__likes">66</span>
+                        <span class="comment_button__arrow _down"></span>
+                    </div>
+                </div>
+            </div>
+             <div class="comment-user">
+                 <div class="comment-avatar">
+                    <img src="assets/img/user_3.png" class="comment-avatar__picture"/>
+                    <lable class="comment__review">Рецензия: 
+                        <span class="comment__reviw_number">10</span>
+                    </lable>
+                    <lable class="comment__note">Оценок 
+                        <span class="comment__note_number _comment__node_red"> -100500</span>
+                     </lable>
+                    <a href="#" id="follow" class="comment__sign"></a>
+                </div>
+                <div class="comment-text">
+                <div class="comment-text__header">
+                    <span class="comment-text__name">Вася Пупкин</span>
+                </div>
+                    <span class="comment-text__date">01.01.2017 в 15:02</span>
+                    <span class="comment-text__opinion">
+                        <span class="comment-text__opinion_link">
+                        Лучшая книга!
+                        </span>
+                    </span>
+                    <div class="comment-button">
+                        <button class="comment-button__reply" name="reply" type="button">Ответить</button>
+                        <span class="comment-button__heart"></span>
+                        <span class="comment-button__likes"> 10</span>
+                        <span class="comment_button__arrow _down"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="comment__more-opinions-wrapp">
+                    <div class="comment__more-opinions" id="more-comments">Больше отзывов
                 </div>
             </div>
 	   </div>
@@ -306,5 +386,6 @@
 </div>
  <div class="footer"></div>
 </div>
+<script src="scripts/script.js"></script>
 </body>
 </html>
