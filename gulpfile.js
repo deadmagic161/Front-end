@@ -71,6 +71,7 @@ gulp.task('watch', function() {
 	gulp.watch('./src/styles/*.css', ['css-dev']);
 	gulp.watch('./src/index.html', ['html']);
 	gulp.watch('./src/**/*.*', browserSync.reload);
+	gulp.watch('./src/scripts/*.js',['scripts']);
 });
 
 gulp.task('clean', function() {
@@ -84,7 +85,7 @@ gulp.task('assets', function() {
 });
 
 gulp.task('scripts', function () {
-	return gulp.src('./src/js/*.js')
+	return gulp.src('./src/scripts/*.js')
 		.pipe(concat('scripts.js'))
-		.pipe(gulp.dest('./build/js/'));
+		.pipe(gulp.dest('./build/scripts/'));
 });
