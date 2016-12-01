@@ -27,6 +27,13 @@ body {
     margin: 0 auto;
 }
 
+.content:after {
+	clear: both;
+	content: '';
+	display: block;
+	height: 10px;
+}
+
 .header{
 	margin: 0 0 50px 0;
 }
@@ -514,6 +521,7 @@ body {
 	display: inline-block;
 	margin : 0 60px 0px 0;
 	size: 515px *;
+	margin: 0 0 110px;
 }
 
 .recommendation__item-title {
@@ -571,7 +579,21 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0 0 110px;
+	max-height: 1500px;
 	width: 520px;
+	transition: max-height 1s;
+}
+
+.comments._show {
+	max-height: 3000px;
+}
+
+.comment__more-opinions._hide {
+	display: none;
+}
+
+.comment-user._unload {
+	display: none;
 }
 
 .comments__item-title {
@@ -703,6 +725,10 @@ body {
  	display: inline-block;
  	border-bottom: 1px dashed #a3a3a3;
  	transition: border .3s linear;
+ }
+
+ .comment__sign:hover:after {
+ 	border-bottom: none;
  }
 
 .comment__sign._follow:after {
