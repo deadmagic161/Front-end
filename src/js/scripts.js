@@ -5,13 +5,22 @@ for (var comment__sign of follow) {
 	})
 }
 
-var stars = document.querySelectorAll('.star_rating__item');
-
-for (var star_rating__item of stars) {
-	star_rating__item.addEventListener('click', function(event) {
-		for (var star_rating__item of stars) {
-			star_rating__item.classList.remove('_activeStar');
+var stars = document.querySelectorAll('.rating');
+for (var rating of stars) {
+	rating.addEventListener('click', function(event) {
+		for (var i = stars.length - 1; i >= 0; i--) {
+			stars[i].classList.remove('value');
 		}
-		event.target.classList.toggle('_activeStar');
+		event.target.classList.add('value');
+		for (var i = stars.length - 1; i >= 0; i--) {
+			if (+stars[i].getAttribute('data') <= +this.getAttribute('data')) {
+				stars[i].classList.add('active');
+			}
+			else {
+				stars[i].classList.remove('active');
+			}
+		
+		}
+					
 	})
 }
