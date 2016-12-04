@@ -27,6 +27,13 @@ body {
     margin: 0 auto;
 }
 
+.content:after {
+	clear: both;
+	content: '';
+	display: block;
+	height: 10px;
+}
+
 .header{
 	margin: 0 0 50px 0;
 }
@@ -464,7 +471,8 @@ body {
 .recommendation {
 	display: inline-block;
 	margin : 0 60px 0px 0;
-	size: 520px *;
+	size: 515px *;
+	margin: 0 0 110px;
 }
 
 .recommendation__item-title {
@@ -522,7 +530,21 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0 0 110px;
+	max-height: 1500px;
 	width: 520px;
+	transition: max-height 1s;
+}
+
+.comments._show {
+	max-height: 3000px;
+}
+
+.comment__more-opinions._hide {
+	display: none;
+}
+
+.comment-user._unload {
+	display: none;
 }
 
 .comments__item-title {
@@ -656,6 +678,10 @@ body {
  	transition: border .3s linear;
  }
 
+ .comment__sign:hover:after {
+ 	border-bottom: none;
+ }
+
 .comment__sign._follow:after {
 	content: "Отписаться";
 }
@@ -691,9 +717,6 @@ body {
 	display: inline-block;
 	margin: 0 0 23px 0;
 }
- .comment-text__opinion {
- 	display: block;
- }
 
 .comment-text__added {
 	display: block;
@@ -774,41 +797,43 @@ body {
 	background-size: 16px 15px;
 }
 
-._arrow-up{
-	size: 41px;
-	background: inline('arrow_up.svg') no-repeat;
-	background-size: 41px 41px;
-	display: inline-block;
-	vertical-align: middle;
-	transition: background .3s linear;
-	cursor: pointer;
-	position: absolute * 0 * *;
-}
-
-._arrow-up:hover {
-	background: inline('arrow_up_active.svg');
-}
-
-._arrow-down {
+._down {
 	size: 41px;
 	background: inline('arrow_down.svg') no-repeat;
 	background-size: 41px 41px;
 	display: inline-block;
 	vertical-align: middle;
-	transition: background, .3s linear;
+	transition: background .5s linear;
 	cursor: pointer;
 	position: absolute * 0 * *;
 }
 
-._arrow-down:hover{
+._down:hover {
 	background: inline('arrow_down_active.svg') no-repeat;
+}
+
+.comment-text._open .comment_button__arrow {
+	background: inline('arrow_up.svg') no-repeat;
+	transition: background .5s linear;
+}
+
+.comment-text._open .comment_button__arrow:hover {
+	background: inline('arrow_up_active.svg');
 }
 
 .comment-text__opinion {
 	font: 16px/1.5em 'Roboto Regular', Arial, sans-serif;
+	display: block;
 	color: #232323;
 	margin: 0 0 29px 0;
+	max-height: 75px;
+	overflow: hidden;
+	transition: max-height 1s;
 }
+
+.comment-text._open .comment-text__opinion {
+	max-height: 300px;
+} 
 
 .comment-avatar__picture {
 	margin: 0 25px 13px 0;
