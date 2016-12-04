@@ -155,6 +155,7 @@ body {
 /*STAR RAITING START*/
 .raiting_stars {
 	display: inline-block;
+	position: relative;
 }
 
 .rating {
@@ -181,7 +182,7 @@ body {
 	font-weight: bold;
     font-size: 18px;
     position: absolute;
-    right: 545px;
+    right: 190px;
 }
 .rating[data='1'].active.value:before {
 	content: '1';
