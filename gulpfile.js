@@ -12,7 +12,7 @@ var short = require('postcss-short');
 gulp.task('default', ['dev']);
 gulp.task('dev', ['build-dev', 'browser-sync', 'watch']);
 gulp.task('prod', ['clean'], function() {
-	gulp.run('build-dev');
+		gulp.run('build-dev');
 });
 
 gulp.task('build-dev', ['html', 'css-dev', 'assets', 'scripts']);
@@ -45,14 +45,13 @@ gulp.task('css-prod', function () {
 		}),
   ];
 	return gulp.src('./src/styles/*.css')
-	
-	.pipe(concat('styles.css'))
-	.pipe(cssnano())
-	.pipe(rename('styleOut.css'))
-	.pipe(autoprefixer({
+		.pipe(concat('styles.css'))
+		.pipe(cssnano())
+		.pipe(rename('styleOut.css'))
+		.pipe(autoprefixer({
 			browser: ['last 2 versions']
 		}))
-	.pipe(gulp.dest('./build/styles/'));
+		.pipe(gulp.dest('./build/styles/'));
 });
 
 gulp.task('html', function () {
@@ -85,7 +84,7 @@ gulp.task('assets', function() {
 });
 
 gulp.task('scripts', function () {
-	return gulp.src('./src/js/*.js')
+	return gulp.src('./src/scripts/*.js')
 		.pipe(concat('scripts.js'))
-		.pipe(gulp.dest('./build/js/'));
+		.pipe(gulp.dest('./build/scripts/'));
 });
