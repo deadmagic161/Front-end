@@ -843,7 +843,7 @@ body {
 	transform: rotate(-90deg);
 	position: absolute;
 	right: 12px;
-	bottom: 10px; 
+	bottom: 11px; 
 }
 
 .comment_button__arrow:hover{
@@ -889,22 +889,18 @@ body {
 	background-size: 16px 15px;
 }
 
-/*._down {
-	size: 41px;
-	background: inline('arrow_down.svg') no-repeat;
-	background-size: 41px 41px;
-	display: inline-block;
-	vertical-align: middle;
-	transition: background .5s linear;
-	cursor: pointer;
-	position: absolute * 0 * *;
-}
-
-._down:hover {
-	background: inline('arrow_down_active.svg') no-repeat;
-}*/
-
 .comment-text._open .comment_button__arrow {
+		content: '';
+	display: block;
+	background: inline('arrow__down.svg');
+	height: 17px;
+    width: 17px;
+    background-size: 17px 17px;
+	background-repeat: no-repeat;
+	/*transform: rotate(90deg);
+	position: absolute;
+	right: 12px;
+	bottom: 14px; */
 	background: inline('arrow_up.svg') no-repeat;
 	transition: background .5s linear;
 }

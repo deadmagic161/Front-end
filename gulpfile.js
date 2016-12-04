@@ -15,8 +15,8 @@ gulp.task('prod', ['clean'], function() {
 	gulp.run('build-dev');
 });
 
-gulp.task('build-dev', ['html', 'css-dev', 'assets']);
-gulp.task('build-prod', ['html', 'css-prod', 'assets']);
+gulp.task('build-dev', ['html', 'css-dev', 'assets', 'scripts']);
+gulp.task('build-prod', ['html', 'css-prod', 'assets', 'scripts']);
 	
 gulp.task('css-dev', function () {
 	var processors = [
@@ -82,4 +82,10 @@ gulp.task('clean', function() {
 gulp.task('assets', function() {
 	return gulp.src('src/assets/**/*.*')
 		.pipe(gulp.dest('./build/assets/'));
+});
+
+gulp.task('scripts', function () {
+	return gulp.src('./src/js/*.js')
+		.pipe(concat('scripts.js'))
+		.pipe(gulp.dest('./build/js/'));
 });
