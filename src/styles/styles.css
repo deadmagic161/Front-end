@@ -840,7 +840,7 @@ body {
     cursor: pointer;
 }
 
-.comment-button__heart:hover {
+.comment-button._active .comment-button__heart {
 	background: inline('heart_active.svg');
 	size: 16px 15px;
 	background-size: 16px 15px;
