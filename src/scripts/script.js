@@ -39,7 +39,7 @@ for (var commentSign of follow) {
 	commentSign.addEventListener('click', function(event) {
 		event.target.classList.toggle('_follow');
 	})
-}
+};
 
 var stars = document.querySelectorAll('.rating');
 for (var rating of stars) {
