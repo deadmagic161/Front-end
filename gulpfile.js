@@ -31,7 +31,7 @@ gulp.task('css-dev', function () {
 		.pipe(postcss(processors))
 		.pipe(rename('styleOut.css'))
 		.pipe(autoprefixer({
-			browser: ['last 2 versions']
+			browsers: ['last 2 versions']
 		}))
 		.pipe(gulp.dest('./build/styles/'));
 });
