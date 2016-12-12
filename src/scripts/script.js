@@ -33,5 +33,5 @@ for (var commentSign of follow) {
 		event.target.classList.toggle('_follow');
 	})
 }
-window.onload = load();
+	window.onload = load();
 }());

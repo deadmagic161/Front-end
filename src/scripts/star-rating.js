@@ -1,22 +1,21 @@
 (function(){
 	var stars = document.querySelectorAll('.rating');
-	for (var rating of stars) {
-		rating.addEventListener('click', function(event) {
+
+	for (var star of stars) {
+		star.addEventListener('click', function(event) {
 			for (var i = stars.length - 1; i >= 0; i--) {
 				stars[i].classList.remove('value');
-			}
+			};
+
 			event.target.classList.add('value');
+
 			for (var i = stars.length - 1; i >= 0; i--) {
-				if (+stars[i].getAttribute('data') <= +this.getAttribute('data')) {
+				if (Number(stars[i].getAttribute('data')) <= Number(this.getAttribute('data'))) {
 					stars[i].classList.add('active');
-				}
-				else {
+				}else {
 					stars[i].classList.remove('active');
 				}
-
 			}
-
 		})
 	}
-
 }());
