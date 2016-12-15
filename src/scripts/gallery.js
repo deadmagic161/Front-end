@@ -1,20 +1,25 @@
-var triggers = document.querySelectorAll('.book-preview__img_small');
+var trigger = document.querySelector('.book-preview__img_small');
 
 var Gallery = (function() {
+    var images = document.querySelectorAll('.book-preview__img_small');
+
     var _init = function() {
-        _eventListener();
+        _eventListeners();
     };
 
-    var _eventListener = function() {
-        var images = document.querySelectorAll('.book-preview__img_small');
-
-        var eventHandler = function() {
-            console.log('Image clicked');
-        };
-
+    var _eventListeners = function() {
         for (var i = 0; i < images.length; i++ ) {
-            images[i].addEventListener('click', eventHandler);
+            images[i].addEventListener('click', changeImages);
         }
+    };
+
+    var changeImages = function() {
+        var clickedImg = this;
+        var bigImg = document.querySelector('.book-preview__img_big');
+        var imagePathBuffer = clickedImg.style.backgroundImage;
+
+        clickedImg.style.backgroundImage = bigImg.style.backgroundImage;
+        bigImg.style.backgroundImage = imagePathBuffer;
     };
 
     return {
@@ -22,4 +27,4 @@ var Gallery = (function() {
     }
 })();
 
-triggers && Gallery.init();
+trigger && Gallery.init();
