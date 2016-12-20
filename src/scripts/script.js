@@ -1,3 +1,4 @@
+(function(){
 	var buttons = document.querySelectorAll('.comment_button__arrow');
 	
 	for (var button  of buttons) {
@@ -25,6 +26,7 @@
   		})
   	}
 
+
 	var follow = document.querySelectorAll('.comment__sign');
 	
 	for (var comment__sign of follow) {
@@ -35,10 +37,15 @@
 window.onload = load();
 
 var follow = document.querySelectorAll('.comment__sign');
+
+var follow = document.querySelectorAll('.comment__sign');
+	
+
 for (var commentSign of follow) {
 	commentSign.addEventListener('click', function(event) {
 		event.target.classList.toggle('_follow');
 	})
+
 };
 
 var stars = document.querySelectorAll('.rating');
@@ -60,3 +67,8 @@ for (var rating of stars) {
 
 	})
 };
+=======
+}
+	window.onload = load();
+}());
+>>>>>>> 401e5965155078f97dfd4d81ae79905939294896
