@@ -18,9 +18,18 @@ var Gallery = (function() {
         var bigImg = document.querySelector('.book-preview__img_big');
         var imagePathBuffer = clickedImg.style.backgroundImage;
 
-        clickedImg.style.backgroundImage = bigImg.style.backgroundImage;
-        bigImg.style.backgroundImage = imagePathBuffer;
+        changeFromTo(bigImg, clickedImg);
+        changeBig(imagePathBuffer);
     };
+
+    var changeFromTo = function(fromElement, toElement) {
+        toElement.style.backgroundImage = fromElement.style.backgroundImage;
+    }
+
+    function changeBig(path) {
+        var div = document.querySelector('.book-preview__img_big');
+        div.style.backgroundImage = path;
+    }
 
     return {
         init: _init
