@@ -163,13 +163,10 @@ body {
 
 @keyframes starRating {
 	0% {
-
 	}
-
 	50% {
 		transform: scale(1.7);
 	}
-
 	100% {
 		transform: scale(1);
 	}
