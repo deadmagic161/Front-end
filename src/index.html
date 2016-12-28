@@ -191,25 +191,27 @@
 				<div class="comments__feed-button">
 					<button class="comments__item-button" name="add review" type="button">Оставить отзыв</button>
 				</div>
-			<div class="comments__item-textarea">
-				<textarea name="comment" class="comments__item-textarea-space" placeholder="Введите текст сообщения"></textarea>
-			</div>
-			<div class="comments__add">
-				<div class="comments__add-files">
-					<a class="comments__add-link" href="#">Прикрепить файл</a>
-				</div>
-					<span class="comments__add-description">
-						<div>
-							Допустимые форматы файлов: PDF, JPEG, PNG,GIF, RTF, DJV
-						</div>	 
-						<div>	
-							Размер файла: не более 30 Мб
-						</div>
-					</span>
-			</div>
-			<div class="comments__submit">
-				<button class="comments__submit-send-button" name="add comments" type="submit">Отправить</button>
-			</div>
+            <form action="" class="comments__form" method="post" enctype="multipart/form-data">
+    			<div class="comments__item-textarea">
+    				<textarea name="comment" class="comments__item-textarea-space" placeholder="Введите текст сообщения"></textarea>
+    			</div>
+    			<div class="comments__add">
+    				<div class="comments__add-files">
+                        <input type="file" class="comments__add-link" value="" name="files">
+    				</div>
+    					<span class="comments__add-description">
+    						<div>
+    							Допустимые форматы файлов: PDF, JPEG, PNG,GIF, RTF, DJV
+    						</div>	 
+    						<div>	
+    							Размер файла: не более 30 Мб
+    						</div>
+    					</span>
+    			</div>
+    			<div class="comments__submit">
+    				<button class="comments__submit-send-button" name="add comments" type="submit">Отправить</button>
+    			</div>
+            </form>
             <div class="comment-user">
                 <div class="comment-avatar">
                     <img src="assets/img/user_1.png" class="comment-avatar__picture"/>
