@@ -1,4 +1,5 @@
-var commentInput = document.querySelector('[name="comment"]');
+var addCommentButton = document.getElementById('addCommentButton');
+var submit = document.getElementById('commentSubmit');
 
 var Comments = function() {
 	var _init = function() {
@@ -12,8 +13,13 @@ var Comments = function() {
 	};
 
 	var _eventListeners = function() {
-		commentInput.addEventListener('change', _addComment);
-		commentInput.addEventListener('change', _clearInput);
+		addCommentButton.addEventListener('click', _changeVisibility);
+		submit.addEventListener('click', _addComment);
+		submit.addEventListener('click', _clearInput);
+	};
+
+	var _changeVisibility = function () {
+		document.getElementById('commentsForm').classList.toggle('_visible');
 	};
 
 	var _addComment = function() {
@@ -33,7 +39,14 @@ var Comments = function() {
 		var min = time.getMinutes() > 9 ? time.getMinutes() : '0' + time.getMinutes();
 		var timeString = time.getDate() + '.' +  +time.getMonth() + '.' +  time.getFullYear() + ' в ' +  
 			 hours + ':' +  min;
+
+		var commentInput = document.getElementById('commentInput');
 		var text = commentInput.value;
+
+        var filesList = createElement('ul', {'class': 'added-file__list'});
+        var images = ['./assets/img/recommend-book1.png',
+            './assets/img/recommend-book2.png'];
+        var item;
 
 		var commentButtons = createElement('div', {'class': 'comment-button'});
 
@@ -49,11 +62,20 @@ var Comments = function() {
 		rightBlock.appendChild(createElement('span', {'class': 'comment-text__date'}, timeString));
 		rightBlock.appendChild(createElement('span', {'class': 'comment-text__opinion'}, text));
 
+
+        for (var path in images) {
+            item = createElement('li', {'class': 'added-file__item'});
+            item.appendChild(createElement('img', {'class': 'added-file__picture',
+                'src': images[path]}));
+            filesList.appendChild(item);
+        }
+
 		commentButtons.appendChild(createElement('button', {'class': 'comment-button__reply'}, 'Ответить'));
 		commentButtons.appendChild(createElement('span', {'class': 'comment-button__heart'}));
 		commentButtons.appendChild(createElement('span', {'class': 'comment-button__likes'}, '0'));
 		commentButtons.appendChild(createElement('span', {'class': 'comment-button__arrow _down'}));
 
+        rightBlock.appendChild(filesList);
 		rightBlock.appendChild(commentButtons);
 
 		newComment.appendChild(avatar);
@@ -80,7 +102,7 @@ var Comments = function() {
 	    }
 
 	    return e;
-	}
+	};
 
 	var _clearInput = function() {
 		commentInput.value = '';
@@ -91,4 +113,4 @@ var Comments = function() {
 	}
 }();
 
-commentInput && Comments.init();
+addCommentButton && Comments.init();

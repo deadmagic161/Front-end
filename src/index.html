@@ -188,30 +188,32 @@
             </div>
 			<div class="comments">
 			<h2 class="comments__item-title">Отзывы читателей</h2>
-				<div class="comments__feed-button">
-					<button class="comments__item-button" name="add review" type="button">Оставить отзыв</button>
-				</div>
-            <form action="" class="comments__form" method="post" enctype="multipart/form-data">
-    			<div class="comments__item-textarea">
-    				<textarea name="comment" class="comments__item-textarea-space" placeholder="Введите текст сообщения"></textarea>
-    			</div>
-    			<div class="comments__add">
-    				<div class="comments__add-files">
-                        <input type="file" class="comments__add-link" value="" name="files">
-    				</div>
-    					<div class="comments__add-description">
-    						<div>
-    							Допустимые форматы файлов: PDF, JPEG, PNG, GIF, RTF, DJV
-    						</div>	 
-    						<div>	
-    							Размер файла: не более 30 Мб
-    						</div>
-    					</div>
-    			</div>
-    			<div class="comments__submit">
-    				<button class="comments__submit-send-button" name="add comments" type="submit">Отправить</button>
-    			</div>
-            </form>
+            <div class="comments__feed-button">
+                <button class="comments__item-button" name="add review" type="button" id="addCommentButton">Оставить отзыв</button>
+            </div>
+            <div  class="comments__form"  enctype="multipart/form-data" id="commentsForm">
+                <div class="comments__item-textarea">
+                    <textarea name="comment" class="comments__item-textarea-space" placeholder="Введите текст сообщения" id="commentInput"></textarea>
+                </div>
+                <div class="comments__add">
+                    <div class="comments__add-files">
+                        <label for="fileupload" class="comments__add-link">Прикрепить файл
+                            <input type="file" multiple id="fileupload" class="comments__add-input" value="Прикрепить файл" name="files">
+                        </label>
+                    </div>
+                    <div class="comments__add-description">
+                        <div>
+                            Допустимые форматы файлов: PDF, JPEG, PNG, GIF, RTF, DJV
+                        </div>
+                        <div>
+                            Размер файла: не более 30 Мб
+                        </div>
+                    </div>
+                </div>
+                <div class="comments__submit">
+                    <button class="comments__submit-send-button" name="add comments" type="submit" id="commentSubmit">Отправить</button>
+                </div>
+            </div>
             <div class="comment-user">
                 <div class="comment-avatar">
                     <img src="assets/img/user_1.png" class="comment-avatar__picture"/>
@@ -368,6 +370,10 @@
 </div>
  <div class="footer"></div>
 </div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.14.2/js/vendor/jquery.ui.widget.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.14.2/js/jquery.iframe-transport.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.14.2/js/jquery.fileupload.min.js"></script>
 <script src="scripts/bundle.js"></script>
 </body>
 </html>

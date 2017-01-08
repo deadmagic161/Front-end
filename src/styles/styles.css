@@ -560,9 +560,16 @@ body {
 }
 
 .comments__item-button:hover {
-	color: #fff #355baa;
+	color: #fff;
+	background: #355baa;
 }
 
+.comments__form {
+	display: none;
+}
+.comments__form._visible {
+	display: block;
+}
 .comments__item-textarea {
 	margin: 0 0 18px 0;
 }
@@ -579,14 +586,23 @@ body {
 	display: inline-block;
 	margin: 0 51px 0 0;
 }
-
+.comments__add-files {
+	position: relative;
+	overflow: hidden;
+}
 .comments__add-link {
 	font: 16px 'Roboto Regular', Arial, sans-serif;
-	text-decoration: none;
+	color: #355baa;
+	text-decoration: underline;
+}
+.comments__add-link:hover {
+	cursor: pointer;
 }
 
-.comments__add-link:hover {
-	text-decoration: underline;
+.comments__add-input {
+	display: none;
+	opacity: 0;
+	outline: none;
 }
 
 .comments__add-description {
